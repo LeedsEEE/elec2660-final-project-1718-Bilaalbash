@@ -6,13 +6,13 @@
 //  Copyright © 2017 Bilaal Bashir. All rights reserved.
 //
 
-#import "SecondViewController.h"
+#import "SubtractViewController.h"
 
-@interface SecondViewController ()
+@interface SubtractViewController ()
 
 @end
 
-@implementation SecondViewController
+@implementation SubtractViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

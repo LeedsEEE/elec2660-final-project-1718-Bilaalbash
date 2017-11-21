@@ -6,13 +6,13 @@
 //  Copyright © 2017 Bilaal Bashir. All rights reserved.
 //
 
-#import "FirstViewController.h"
+#import "AddViewController.h"
 
-@interface FirstViewController ()
+@interface AddViewController ()
 
 @end
 
-@implementation FirstViewController
+@implementation AddViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

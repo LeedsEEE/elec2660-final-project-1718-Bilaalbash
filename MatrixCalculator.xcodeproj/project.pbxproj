@@ -8,14 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		280CC2681FC454690066D6EC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 280CC2671FC454690066D6EC /* AppDelegate.m */; };
-		280CC26B1FC454690066D6EC /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 280CC26A1FC454690066D6EC /* FirstViewController.m */; };
-		280CC26E1FC454690066D6EC /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 280CC26D1FC454690066D6EC /* SecondViewController.m */; };
+		280CC26B1FC454690066D6EC /* AddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 280CC26A1FC454690066D6EC /* AddViewController.m */; };
+		280CC26E1FC454690066D6EC /* SubtractViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 280CC26D1FC454690066D6EC /* SubtractViewController.m */; };
 		280CC2711FC454690066D6EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 280CC26F1FC454690066D6EC /* Main.storyboard */; };
 		280CC2731FC454690066D6EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 280CC2721FC454690066D6EC /* Assets.xcassets */; };
 		280CC2761FC454690066D6EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 280CC2741FC454690066D6EC /* LaunchScreen.storyboard */; };
 		280CC2791FC454690066D6EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 280CC2781FC454690066D6EC /* main.m */; };
 		280CC2831FC454690066D6EC /* MatrixCalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 280CC2821FC454690066D6EC /* MatrixCalculatorTests.m */; };
 		280CC28E1FC454690066D6EC /* MatrixCalculatorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 280CC28D1FC454690066D6EC /* MatrixCalculatorUITests.m */; };
+		2860F1971FC461EC00E1F092 /* MultiplyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2860F1961FC461EC00E1F092 /* MultiplyViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,10 +40,10 @@
 		280CC2631FC454690066D6EC /* MatrixCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatrixCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		280CC2661FC454690066D6EC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		280CC2671FC454690066D6EC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		280CC2691FC454690066D6EC /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		280CC26A1FC454690066D6EC /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		280CC26C1FC454690066D6EC /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		280CC26D1FC454690066D6EC /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		280CC2691FC454690066D6EC /* AddViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddViewController.h; sourceTree = "<group>"; };
+		280CC26A1FC454690066D6EC /* AddViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddViewController.m; sourceTree = "<group>"; };
+		280CC26C1FC454690066D6EC /* SubtractViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubtractViewController.h; sourceTree = "<group>"; };
+		280CC26D1FC454690066D6EC /* SubtractViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubtractViewController.m; sourceTree = "<group>"; };
 		280CC2701FC454690066D6EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		280CC2721FC454690066D6EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		280CC2751FC454690066D6EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,6 +55,8 @@
 		280CC2891FC454690066D6EC /* MatrixCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MatrixCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		280CC28D1FC454690066D6EC /* MatrixCalculatorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MatrixCalculatorUITests.m; sourceTree = "<group>"; };
 		280CC28F1FC454690066D6EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2860F1951FC461EC00E1F092 /* MultiplyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultiplyViewController.h; sourceTree = "<group>"; };
+		2860F1961FC461EC00E1F092 /* MultiplyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultiplyViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,10 +109,12 @@
 			children = (
 				280CC2661FC454690066D6EC /* AppDelegate.h */,
 				280CC2671FC454690066D6EC /* AppDelegate.m */,
-				280CC2691FC454690066D6EC /* FirstViewController.h */,
-				280CC26A1FC454690066D6EC /* FirstViewController.m */,
-				280CC26C1FC454690066D6EC /* SecondViewController.h */,
-				280CC26D1FC454690066D6EC /* SecondViewController.m */,
+				280CC2691FC454690066D6EC /* AddViewController.h */,
+				280CC26A1FC454690066D6EC /* AddViewController.m */,
+				280CC26C1FC454690066D6EC /* SubtractViewController.h */,
+				280CC26D1FC454690066D6EC /* SubtractViewController.m */,
+				2860F1951FC461EC00E1F092 /* MultiplyViewController.h */,
+				2860F1961FC461EC00E1F092 /* MultiplyViewController.m */,
 				280CC26F1FC454690066D6EC /* Main.storyboard */,
 				280CC2721FC454690066D6EC /* Assets.xcassets */,
 				280CC2741FC454690066D6EC /* LaunchScreen.storyboard */,
@@ -270,10 +275,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				280CC26E1FC454690066D6EC /* SecondViewController.m in Sources */,
+				2860F1971FC461EC00E1F092 /* MultiplyViewController.m in Sources */,
+				280CC26E1FC454690066D6EC /* SubtractViewController.m in Sources */,
 				280CC2681FC454690066D6EC /* AppDelegate.m in Sources */,
 				280CC2791FC454690066D6EC /* main.m in Sources */,
-				280CC26B1FC454690066D6EC /* FirstViewController.m in Sources */,
+				280CC26B1FC454690066D6EC /* AddViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

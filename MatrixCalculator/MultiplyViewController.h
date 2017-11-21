@@ -1,5 +1,5 @@
 //
-//  SecondViewController.h
+//  MultiplyViewController.h
 //  MatrixCalculator
 //
 //  Created by Bilaal Bashir on 21/11/2017.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SecondViewController : UIViewController
-
+@interface MultiplyViewController : UIViewController
 
 @end
-
