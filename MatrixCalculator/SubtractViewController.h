@@ -8,8 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SubtractViewController : UIViewController
+@interface SubtractViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
 
+@property (weak, nonatomic) IBOutlet UIPickerView *firstPickerSubtract;
+
+@property (weak, nonatomic) IBOutlet UIPickerView *secondPickerSubtract;
+
+- (IBAction)didSelect:(id)sender;
 
 @end
 

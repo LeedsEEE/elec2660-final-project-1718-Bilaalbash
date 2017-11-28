@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MultiplyViewController : UIViewController
+@interface MultiplyViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
+
+@property (weak, nonatomic) IBOutlet UIPickerView *firstPickerMultiply;
+
+@property (weak, nonatomic) IBOutlet UIPickerView *secondPickerMultiply;
+
+
 
 @end
