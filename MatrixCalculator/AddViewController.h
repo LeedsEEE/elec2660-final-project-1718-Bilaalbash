@@ -10,10 +10,11 @@
 
 @interface AddViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
 
-
 @property (weak, nonatomic) IBOutlet UIPickerView *firstPickerAdd;
+
 @property (weak, nonatomic) IBOutlet UIPickerView *secondPickerAdd;
 
+- (IBAction)didselect1:(id)sender;
 
 @end
 

@@ -10,8 +10,8 @@
 
 @interface SubtractViewController (){
     NSArray *matrixSize;
-}
 
+}
 @end
 
 @implementation SubtractViewController
@@ -65,13 +65,10 @@
     return title;
 }
 
-
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 
 - (IBAction)didSelect:(id)sender {
     self.secondPickerSubtract.hidden = NO;
