@@ -13,6 +13,7 @@
 @property (weak, nonatomic) IBOutlet UIPickerView *firstPickerAdd;
 
 @property (weak, nonatomic) IBOutlet UIPickerView *secondPickerAdd;
+@property (weak, nonatomic) IBOutlet UIButton *myButton;
 
 - (IBAction)didselect1:(id)sender;
 
