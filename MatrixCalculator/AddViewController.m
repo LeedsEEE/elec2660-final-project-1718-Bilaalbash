@@ -8,8 +8,7 @@
 
 #import "AddViewController.h"
 
-@interface AddViewController ()
-{
+@interface AddViewController (){
     NSArray *matrixSize;
 }
 @end

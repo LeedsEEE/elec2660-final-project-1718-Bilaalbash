@@ -13,8 +13,13 @@
 @property (weak, nonatomic) IBOutlet UIPickerView *firstPickerSubtract;
 
 @property (weak, nonatomic) IBOutlet UIPickerView *secondPickerSubtract;
+@property (weak, nonatomic) IBOutlet UIButton *myButton;
 
 - (IBAction)didSelect:(id)sender;
+
+@property (weak, nonatomic) IBOutlet UIButton *subtractButton;
+- (IBAction)subtractButton:(id)sender;
+
 
 //MatrixA Textfields
 @property (weak, nonatomic) IBOutlet UITextField *matrixA1;
