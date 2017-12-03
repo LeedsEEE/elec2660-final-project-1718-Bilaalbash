@@ -1928,6 +1928,7 @@
                                 </state>
                                 <connections>
                                     <action selector="addButton:" destination="9pv-A4-QxB" eventType="touchUpInside" id="kbg-ks-aA4"/>
+                                    <action selector="multiplyButton:" destination="Yyv-5T-iTT" eventType="touchUpInside" id="pDd-4d-PhQ"/>
                                     <action selector="subtractButton:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="SHR-VZ-iom"/>
                                 </connections>
                             </button>
@@ -2142,6 +2143,22 @@
                         <outlet property="matrixB7" destination="hVQ-1R-CTT" id="3P3-BT-7I4"/>
                         <outlet property="matrixB8" destination="dqs-rV-8Dc" id="P5t-fg-Ufc"/>
                         <outlet property="matrixB9" destination="XdA-vD-CK6" id="1mu-i0-8Ms"/>
+                        <outlet property="result1" destination="rfs-dq-R5O" id="Vgf-ty-9cn"/>
+                        <outlet property="result10" destination="GlR-hG-WEd" id="gvj-uk-tqH"/>
+                        <outlet property="result11" destination="e07-IY-LuB" id="Sbi-f2-LkB"/>
+                        <outlet property="result12" destination="hst-jL-jah" id="Wyr-Il-xEj"/>
+                        <outlet property="result13" destination="AkP-bc-sIf" id="cTt-3Y-iK0"/>
+                        <outlet property="result14" destination="D9U-ZH-sGT" id="vNu-xL-OpB"/>
+                        <outlet property="result15" destination="4MR-gP-8BN" id="P6e-xj-vfh"/>
+                        <outlet property="result16" destination="wa1-a1-tGb" id="LmZ-OW-L0d"/>
+                        <outlet property="result2" destination="xP8-Cq-iAL" id="jdd-u0-Acg"/>
+                        <outlet property="result3" destination="K6K-Qq-qlm" id="MDV-kG-6O4"/>
+                        <outlet property="result4" destination="IKi-cz-Njw" id="MIS-b6-zPs"/>
+                        <outlet property="result5" destination="2cv-Bs-n8m" id="aBE-dW-liU"/>
+                        <outlet property="result6" destination="sCf-s9-GZo" id="dgV-i4-16h"/>
+                        <outlet property="result7" destination="Fxb-Ic-Dgg" id="7yX-QW-XHF"/>
+                        <outlet property="result8" destination="68P-CU-X9P" id="SmG-Pv-jzT"/>
+                        <outlet property="result9" destination="3sU-NT-ttS" id="ItX-ZO-gfx"/>
                         <outlet property="secondPickerMultiply" destination="mjU-EW-aNL" id="Yim-F7-jHC"/>
                     </connections>
                 </viewController>

@@ -13,6 +13,7 @@
 @property (weak, nonatomic) IBOutlet UIPickerView *firstPickerMultiply;
 
 @property (weak, nonatomic) IBOutlet UIPickerView *secondPickerMultiply;
+- (IBAction)multiplyButton:(id)sender;
 
 //MatrixA Textfields
 @property (weak, nonatomic) IBOutlet UITextField *matrixA1;
@@ -51,6 +52,22 @@
 @property (weak, nonatomic) IBOutlet UITextField *matrixB16;
 
 //Result Textfields
+@property (weak, nonatomic) IBOutlet UITextField *result1;
+@property (weak, nonatomic) IBOutlet UITextField *result2;
+@property (weak, nonatomic) IBOutlet UITextField *result3;
+@property (weak, nonatomic) IBOutlet UITextField *result4;
+@property (weak, nonatomic) IBOutlet UITextField *result5;
+@property (weak, nonatomic) IBOutlet UITextField *result6;
+@property (weak, nonatomic) IBOutlet UITextField *result7;
+@property (weak, nonatomic) IBOutlet UITextField *result8;
+@property (weak, nonatomic) IBOutlet UITextField *result9;
+@property (weak, nonatomic) IBOutlet UITextField *result10;
+@property (weak, nonatomic) IBOutlet UITextField *result11;
+@property (weak, nonatomic) IBOutlet UITextField *result12;
+@property (weak, nonatomic) IBOutlet UITextField *result13;
+@property (weak, nonatomic) IBOutlet UITextField *result14;
+@property (weak, nonatomic) IBOutlet UITextField *result15;
+@property (weak, nonatomic) IBOutlet UITextField *result16;
 
 
 
