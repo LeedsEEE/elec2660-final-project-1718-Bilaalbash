@@ -16,6 +16,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *myButton;
 
 - (IBAction)didselect1:(id)sender;
+- (IBAction)addButton:(id)sender;
+
 
 //MatrixA Textfields
 @property (weak, nonatomic) IBOutlet UITextField *matrixA1;
