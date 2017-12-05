@@ -330,7 +330,6 @@
     
     self.secondPickerMultiply.hidden = NO;
     [self.secondPickerMultiply reloadAllComponents];
-    NSInteger firstPickerRow = [self.firstPickerMultiply selectedRowInComponent:0];
 
     //If statements to hide textfields
 
