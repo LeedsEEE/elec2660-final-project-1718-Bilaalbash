@@ -10,6 +10,11 @@
 
 @interface MultiplyViewController (){
     NSArray *matrixSize;
+    NSArray *row1;
+    NSArray *row2;
+    NSArray *row3;
+    NSArray *row4;
+
 }
 
 @end
@@ -45,6 +50,11 @@
     self.result15.hidden = YES;
     self.result16.hidden = YES;
     
+    row1 = @[@"1x1", @"1x2", @"1x3", @"1x4"];
+    row2 = @[@"2x1", @"2x2", @"2x3", @"2x4"];
+    row3 = @[@"3x1", @"3x2", @"3x3", @"3x4"];
+    row4 = @[@"4x1", @"4x2", @"4x3", @"4x4"];
+
     matrixSize = @[@"1x1",@"1x2",@"1x3",@"1x4",@"2x1",@"2x2",@"2x3",@"2x4",@"3x1",@"3x2",@"3x3",@"3x4",@"4x1",@"4x2",@"4x3",@"4x4"];
 }
 
@@ -67,7 +77,7 @@
         rows = matrixSize.count;
     }
     else if (pickerView == self.secondPickerMultiply) {
-        rows = 1;
+        rows = 4;
     }
     return rows;
 }
@@ -81,7 +91,233 @@
     }
     else if (pickerView == self.secondPickerMultiply){
         
-        title = [matrixSize objectAtIndex:[self.firstPickerMultiply selectedRowInComponent:0]];
+        //title = [matrixSize objectAtIndex:[self.firstPickerMultiply selectedRowInComponent:0]];
+        
+        NSInteger firstPickerRow = [self.firstPickerMultiply selectedRowInComponent:0];
+        if (firstPickerRow == 0) {
+            if (row == 0) {
+                title = row1[0];
+            }
+            else if (row == 1) {
+                title = row1[1];
+            }
+            else if (row == 2) {
+                title = row1[2];
+            }
+            else if (row == 3) {
+                title = row1[3];
+            }
+        }
+        else if (firstPickerRow == 1) {
+            if (row == 0) {
+                title = row2[0];
+            }
+            else if (row == 1) {
+                title = row2[1];
+            }
+            else if (row == 2) {
+                title = row2[2];
+            }
+            else if (row == 3) {
+                title = row2[3];
+            }
+        }
+        else if (firstPickerRow == 2) {
+            if (row == 0) {
+                title = row3[0];
+            }
+            else if (row == 1) {
+                title = row3[1];
+            }
+            else if (row == 2) {
+                title = row3[2];
+            }
+            else if (row == 3) {
+                title = row3[3];
+            }
+        }
+        else if (firstPickerRow == 3) {
+            if (row == 0) {
+                title = row4[0];
+            }
+            else if (row == 1) {
+                title = row4[1];
+            }
+            else if (row == 2) {
+                title = row4[2];
+            }
+            else if (row == 3) {
+                title = row4[3];
+            }
+        }
+        if (firstPickerRow == 4) {
+            if (row == 0) {
+                title = row1[0];
+            }
+            else if (row == 1) {
+                title = row1[1];
+            }
+            else if (row == 2) {
+                title = row1[2];
+            }
+            else if (row == 3) {
+                title = row1[3];
+            }
+        }
+        else if (firstPickerRow == 5) {
+            if (row == 0) {
+                title = row2[0];
+            }
+            else if (row == 1) {
+                title = row2[1];
+            }
+            else if (row == 2) {
+                title = row2[2];
+            }
+            else if (row == 3) {
+                title = row2[3];
+            }
+        }
+        else if (firstPickerRow == 6) {
+            if (row == 0) {
+                title = row3[0];
+            }
+            else if (row == 1) {
+                title = row3[1];
+            }
+            else if (row == 2) {
+                title = row3[2];
+            }
+            else if (row == 3) {
+                title = row3[3];
+            }
+        }
+        else if (firstPickerRow == 7) {
+            if (row == 0) {
+                title = row4[0];
+            }
+            else if (row == 1) {
+                title = row4[1];
+            }
+            else if (row == 2) {
+                title = row4[2];
+            }
+            else if (row == 3) {
+                title = row4[3];
+            }
+        }
+        if (firstPickerRow == 8) {
+            if (row == 0) {
+                title = row1[0];
+            }
+            else if (row == 1) {
+                title = row1[1];
+            }
+            else if (row == 2) {
+                title = row1[2];
+            }
+            else if (row == 3) {
+                title = row1[3];
+            }
+        }
+        else if (firstPickerRow == 9) {
+            if (row == 0) {
+                title = row2[0];
+            }
+            else if (row == 1) {
+                title = row2[1];
+            }
+            else if (row == 2) {
+                title = row2[2];
+            }
+            else if (row == 3) {
+                title = row2[3];
+            }
+        }
+        else if (firstPickerRow == 10) {
+            if (row == 0) {
+                title = row3[0];
+            }
+            else if (row == 1) {
+                title = row3[1];
+            }
+            else if (row == 2) {
+                title = row3[2];
+            }
+            else if (row == 3) {
+                title = row3[3];
+            }
+        }
+        else if (firstPickerRow == 11) {
+            if (row == 0) {
+                title = row4[0];
+            }
+            else if (row == 1) {
+                title = row4[1];
+            }
+            else if (row == 2) {
+                title = row4[2];
+            }
+            else if (row == 3) {
+                title = row4[3];
+            }
+        }
+        if (firstPickerRow == 12) {
+            if (row == 0) {
+                title = row1[0];
+            }
+            else if (row == 1) {
+                title = row1[1];
+            }
+            else if (row == 2) {
+                title = row1[2];
+            }
+            else if (row == 3) {
+                title = row1[3];
+            }
+        }
+        else if (firstPickerRow == 13) {
+            if (row == 0) {
+                title = row2[0];
+            }
+            else if (row == 1) {
+                title = row2[1];
+            }
+            else if (row == 2) {
+                title = row2[2];
+            }
+            else if (row == 3) {
+                title = row2[3];
+            }
+        }
+        else if (firstPickerRow == 14) {
+            if (row == 0) {
+                title = row3[0];
+            }
+            else if (row == 1) {
+                title = row3[1];
+            }
+            else if (row == 2) {
+                title = row3[2];
+            }
+            else if (row == 3) {
+                title = row3[3];
+            }
+        }
+        else if (firstPickerRow == 15) {
+            if (row == 0) {
+                title = row4[0];
+            }
+            else if (row == 1) {
+                title = row4[1];
+            }
+            else if (row == 2) {
+                title = row4[2];
+            }
+            else if (row == 3) {
+                title = row4[3];
+            }
+        }
     }
     
     return title;
@@ -93,7 +329,7 @@
     [self.secondPickerMultiply reloadAllComponents];
     
     //hide textfields using picker
-    
+
     if (pickerView == self.firstPickerMultiply) {
         NSInteger row = [self.firstPickerMultiply selectedRowInComponent:0];
         if (row  == 0) {
