@@ -32,8 +32,41 @@
     self.secondPickerMultiply.dataSource = self;
     
     self.secondPickerMultiply.hidden = YES;
+    self.matrixB1.hidden = NO;
+    self.matrixB2.hidden = YES;
+    self.matrixB3.hidden = YES;
+    self.matrixB4.hidden = YES;
+    self.matrixB5.hidden = YES;
+    self.matrixB6.hidden = YES;
+    self.matrixB7.hidden = YES;
+    self.matrixB8.hidden = YES;
+    self.matrixB9.hidden = YES;
+    self.matrixB10.hidden = YES;
+    self.matrixB11.hidden = YES;
+    self.matrixB12.hidden = YES;
+    self.matrixB13.hidden = YES;
+    self.matrixB14.hidden = YES;
+    self.matrixB15.hidden = YES;
+    self.matrixB16.hidden = YES;
     
-    self.result1.hidden = YES;
+    self.matrixA1.hidden = NO;
+    self.matrixA2.hidden = YES;
+    self.matrixA3.hidden = YES;
+    self.matrixA4.hidden = YES;
+    self.matrixA5.hidden = YES;
+    self.matrixA6.hidden = YES;
+    self.matrixA7.hidden = YES;
+    self.matrixA8.hidden = YES;
+    self.matrixA9.hidden = YES;
+    self.matrixA10.hidden = YES;
+    self.matrixA11.hidden = YES;
+    self.matrixA12.hidden = YES;
+    self.matrixA13.hidden = YES;
+    self.matrixA14.hidden = YES;
+    self.matrixA15.hidden = YES;
+    self.matrixA16.hidden = YES;
+    
+    self.result1.hidden = NO;
     self.result2.hidden = YES;
     self.result3.hidden = YES;
     self.result4.hidden = YES;
@@ -330,12 +363,29 @@
     
     self.secondPickerMultiply.hidden = NO;
     [self.secondPickerMultiply reloadAllComponents];
+    NSInteger firstPickerRow = [self.firstPickerMultiply selectedRowInComponent:0];
 
     //If statements to hide textfields
-
-    if (pickerView == self.firstPickerMultiply) {
-        NSInteger row = [self.firstPickerMultiply selectedRowInComponent:0];
-        if (row  == 0) {
+    if (pickerView == self.secondPickerMultiply) {
+        NSInteger row = [self.secondPickerMultiply selectedRowInComponent:0];
+        if ((firstPickerRow == 0) && (row  == 0)) {
+            self.matrixB1.hidden = NO;
+            self.matrixB2.hidden = YES;
+            self.matrixB3.hidden = YES;
+            self.matrixB4.hidden = YES;
+            self.matrixB5.hidden = YES;
+            self.matrixB6.hidden = YES;
+            self.matrixB7.hidden = YES;
+            self.matrixB8.hidden = YES;
+            self.matrixB9.hidden = YES;
+            self.matrixB10.hidden = YES;
+            self.matrixB11.hidden = YES;
+            self.matrixB12.hidden = YES;
+            self.matrixB13.hidden = YES;
+            self.matrixB14.hidden = YES;
+            self.matrixB15.hidden = YES;
+            self.matrixB16.hidden = YES;
+            
             self.matrixA1.hidden = NO;
             self.matrixA2.hidden = YES;
             self.matrixA3.hidden = YES;
@@ -352,7 +402,7 @@
             self.matrixA14.hidden = YES;
             self.matrixA15.hidden = YES;
             self.matrixA16.hidden = YES;
-
+            
             self.result1.hidden = NO;
             self.result2.hidden = YES;
             self.result3.hidden = YES;
@@ -368,48 +418,30 @@
             self.result13.hidden = YES;
             self.result14.hidden = YES;
             self.result15.hidden = YES;
-            self.result16.hidden = YES;
+            self.result6.hidden = YES;
             
         }
-        else if (row == 1) {
+       else if ((firstPickerRow == 0) && (row  == 1)) {
+            self.matrixB1.hidden = NO;
+            self.matrixB2.hidden = NO;
+            self.matrixB3.hidden = YES;
+            self.matrixB4.hidden = YES;
+            self.matrixB5.hidden = YES;
+            self.matrixB6.hidden = YES;
+            self.matrixB7.hidden = YES;
+            self.matrixB8.hidden = YES;
+            self.matrixB9.hidden = YES;
+            self.matrixB10.hidden = YES;
+            self.matrixB11.hidden = YES;
+            self.matrixB12.hidden = YES;
+            self.matrixB13.hidden = YES;
+            self.matrixB14.hidden = YES;
+            self.matrixB15.hidden = YES;
+            self.matrixB16.hidden = YES;
+            
             self.matrixA1.hidden = NO;
-            self.matrixA2.hidden = NO;
+            self.matrixA2.hidden = YES;
             self.matrixA3.hidden = YES;
-            self.matrixA4.hidden = YES;
-            self.matrixA5.hidden = YES;
-            self.matrixA6.hidden = YES;
-            self.matrixA7.hidden = YES;
-            self.matrixA8.hidden = YES;
-            self.matrixA9.hidden = YES;
-            self.matrixA10.hidden = YES;
-            self.matrixA11.hidden = YES;
-            self.matrixA12.hidden = YES;
-            self.matrixA13.hidden = YES;
-            self.matrixA14.hidden = YES;
-            self.matrixA15.hidden = YES;
-            self.matrixA16.hidden = YES;
-
-            self.result1.hidden = NO;
-            self.result2.hidden = NO;
-            self.result3.hidden = YES;
-            self.result4.hidden = YES;
-            self.result5.hidden = YES;
-            self.result6.hidden = YES;
-            self.result7.hidden = YES;
-            self.result8.hidden = YES;
-            self.result9.hidden = YES;
-            self.result10.hidden = YES;
-            self.result11.hidden = YES;
-            self.result12.hidden = YES;
-            self.result13.hidden = YES;
-            self.result14.hidden = YES;
-            self.result15.hidden = YES;
-            self.result16.hidden = YES;
-        }
-        else if (row == 2) {
-            self.matrixA1.hidden = NO;
-            self.matrixA2.hidden = NO;
-            self.matrixA3.hidden = NO;
             self.matrixA4.hidden = YES;
             self.matrixA5.hidden = YES;
             self.matrixA6.hidden = YES;
@@ -426,7 +458,7 @@
             
             self.result1.hidden = NO;
             self.result2.hidden = NO;
-            self.result3.hidden = NO;
+            self.result3.hidden = YES;
             self.result4.hidden = YES;
             self.result5.hidden = YES;
             self.result6.hidden = YES;
@@ -440,478 +472,738 @@
             self.result14.hidden = YES;
             self.result15.hidden = YES;
             self.result16.hidden = YES;
-            
         }
-        else if (row == 3) {
-            self.matrixA1.hidden = NO;
-            self.matrixA2.hidden = NO;
-            self.matrixA3.hidden = NO;
-            self.matrixA4.hidden = NO;
-            self.matrixA5.hidden = YES;
-            self.matrixA6.hidden = YES;
-            self.matrixA7.hidden = YES;
-            self.matrixA8.hidden = YES;
-            self.matrixA9.hidden = YES;
-            self.matrixA10.hidden = YES;
-            self.matrixA11.hidden = YES;
-            self.matrixA12.hidden = YES;
-            self.matrixA13.hidden = YES;
-            self.matrixA14.hidden = YES;
-            self.matrixA15.hidden = YES;
-            self.matrixA16.hidden = YES;
-            
-            self.result1.hidden = NO;
-            self.result2.hidden = NO;
-            self.result3.hidden = NO;
-            self.result4.hidden = NO;
-            self.result5.hidden = YES;
-            self.result6.hidden = YES;
-            self.result7.hidden = YES;
-            self.result8.hidden = YES;
-            self.result9.hidden = YES;
-            self.result10.hidden = YES;
-            self.result11.hidden = YES;
-            self.result12.hidden = YES;
-            self.result13.hidden = YES;
-            self.result14.hidden = YES;
-            self.result15.hidden = YES;
-            self.result16.hidden = YES;
-            
-        }
-        else if (row == 4) {
-            self.matrixA1.hidden = NO;
-            self.matrixA2.hidden = YES;
-            self.matrixA3.hidden = YES;
-            self.matrixA4.hidden = YES;
-            self.matrixA5.hidden = NO;
-            self.matrixA6.hidden = YES;
-            self.matrixA7.hidden = YES;
-            self.matrixA8.hidden = YES;
-            self.matrixA9.hidden = YES;
-            self.matrixA10.hidden = YES;
-            self.matrixA11.hidden = YES;
-            self.matrixA12.hidden = YES;
-            self.matrixA13.hidden = YES;
-            self.matrixA14.hidden = YES;
-            self.matrixA15.hidden = YES;
-            self.matrixA16.hidden = YES;
-            
-            self.result1.hidden = NO;
-            self.result2.hidden = YES;
-            self.result3.hidden = YES;
-            self.result4.hidden = YES;
-            self.result5.hidden = NO;
-            self.result6.hidden = YES;
-            self.result7.hidden = YES;
-            self.result8.hidden = YES;
-            self.result9.hidden = YES;
-            self.result10.hidden = YES;
-            self.result11.hidden = YES;
-            self.result12.hidden = YES;
-            self.result13.hidden = YES;
-            self.result14.hidden = YES;
-            self.result15.hidden = YES;
-            self.result16.hidden = YES;
-        }
-        else if (row == 5) {
-            self.matrixA1.hidden = NO;
-            self.matrixA2.hidden = NO;
-            self.matrixA3.hidden = YES;
-            self.matrixA4.hidden = YES;
-            self.matrixA5.hidden = NO;
-            self.matrixA6.hidden = NO;
-            self.matrixA7.hidden = YES;
-            self.matrixA8.hidden = YES;
-            self.matrixA9.hidden = YES;
-            self.matrixA10.hidden = YES;
-            self.matrixA11.hidden = YES;
-            self.matrixA12.hidden = YES;
-            self.matrixA13.hidden = YES;
-            self.matrixA14.hidden = YES;
-            self.matrixA15.hidden = YES;
-            self.matrixA16.hidden = YES;
-            
-            self.result1.hidden = NO;
-            self.result2.hidden = NO;
-            self.result3.hidden = YES;
-            self.result4.hidden = YES;
-            self.result5.hidden = NO;
-            self.result6.hidden = NO;
-            self.result7.hidden = YES;
-            self.result8.hidden = YES;
-            self.result9.hidden = YES;
-            self.result10.hidden = YES;
-            self.result11.hidden = YES;
-            self.result12.hidden = YES;
-            self.result13.hidden = YES;
-            self.result14.hidden = YES;
-            self.result15.hidden = YES;
-            self.result16.hidden = YES;
-            
-        }
-        else if (row == 6) {
-            self.matrixA1.hidden = NO;
-            self.matrixA2.hidden = NO;
-            self.matrixA3.hidden = NO;
-            self.matrixA4.hidden = YES;
-            self.matrixA5.hidden = NO;
-            self.matrixA6.hidden = NO;
-            self.matrixA7.hidden = NO;
-            self.matrixA8.hidden = YES;
-            self.matrixA9.hidden = YES;
-            self.matrixA10.hidden = YES;
-            self.matrixA11.hidden = YES;
-            self.matrixA12.hidden = YES;
-            self.matrixA13.hidden = YES;
-            self.matrixA14.hidden = YES;
-            self.matrixA15.hidden = YES;
-            self.matrixA16.hidden = YES;
-            
-            self.result1.hidden = NO;
-            self.result2.hidden = NO;
-            self.result3.hidden = NO;
-            self.result4.hidden = YES;
-            self.result5.hidden = NO;
-            self.result6.hidden = NO;
-            self.result7.hidden = NO;
-            self.result8.hidden = YES;
-            self.result9.hidden = YES;
-            self.result10.hidden = YES;
-            self.result11.hidden = YES;
-            self.result12.hidden = YES;
-            self.result13.hidden = YES;
-            self.result14.hidden = YES;
-            self.result15.hidden = YES;
-            self.result16.hidden = YES;
-            
-        }
-        else if (row == 7) {
-            self.matrixA1.hidden = NO;
-            self.matrixA2.hidden = NO;
-            self.matrixA3.hidden = NO;
-            self.matrixA4.hidden = NO;
-            self.matrixA5.hidden = NO;
-            self.matrixA6.hidden = NO;
-            self.matrixA7.hidden = NO;
-            self.matrixA8.hidden = NO;
-            self.matrixA9.hidden = YES;
-            self.matrixA10.hidden = YES;
-            self.matrixA11.hidden = YES;
-            self.matrixA12.hidden = YES;
-            self.matrixA13.hidden = YES;
-            self.matrixA14.hidden = YES;
-            self.matrixA15.hidden = YES;
-            self.matrixA16.hidden = YES;
-            
-            self.result1.hidden = NO;
-            self.result2.hidden = NO;
-            self.result3.hidden = NO;
-            self.result4.hidden = NO;
-            self.result5.hidden = NO;
-            self.result6.hidden = NO;
-            self.result7.hidden = NO;
-            self.result8.hidden = NO;
-            self.result9.hidden = YES;
-            self.result10.hidden = YES;
-            self.result11.hidden = YES;
-            self.result12.hidden = YES;
-            self.result13.hidden = YES;
-            self.result14.hidden = YES;
-            self.result15.hidden = YES;
-            self.result16.hidden = YES;
-        }
-        else if (row == 8) {
-            self.matrixA1.hidden = NO;
-            self.matrixA2.hidden = YES;
-            self.matrixA3.hidden = YES;
-            self.matrixA4.hidden = YES;
-            self.matrixA5.hidden = NO;
-            self.matrixA6.hidden = YES;
-            self.matrixA7.hidden = YES;
-            self.matrixA8.hidden = YES;
-            self.matrixA9.hidden = NO;
-            self.matrixA10.hidden = YES;
-            self.matrixA11.hidden = YES;
-            self.matrixA12.hidden = YES;
-            self.matrixA13.hidden = YES;
-            self.matrixA14.hidden = YES;
-            self.matrixA15.hidden = YES;
-            self.matrixA16.hidden = YES;
-
-            self.result1.hidden = NO;
-            self.result2.hidden = YES;
-            self.result3.hidden = YES;
-            self.result4.hidden = YES;
-            self.result5.hidden = NO;
-            self.result6.hidden = YES;
-            self.result7.hidden = YES;
-            self.result8.hidden = YES;
-            self.result9.hidden = NO;
-            self.result10.hidden = YES;
-            self.result11.hidden = YES;
-            self.result12.hidden = YES;
-            self.result13.hidden = YES;
-            self.result14.hidden = YES;
-            self.result15.hidden = YES;
-            self.result16.hidden = YES;
-            
-        }
-        else if (row == 9) {
-            self.matrixA1.hidden = NO;
-            self.matrixA2.hidden = NO;
-            self.matrixA3.hidden = YES;
-            self.matrixA4.hidden = YES;
-            self.matrixA5.hidden = NO;
-            self.matrixA6.hidden = NO;
-            self.matrixA7.hidden = YES;
-            self.matrixA8.hidden = YES;
-            self.matrixA9.hidden = NO;
-            self.matrixA10.hidden = NO;
-            self.matrixA11.hidden = YES;
-            self.matrixA12.hidden = YES;
-            self.matrixA13.hidden = YES;
-            self.matrixA14.hidden = YES;
-            self.matrixA15.hidden = YES;
-            self.matrixA16.hidden = YES;
-            
-            self.result1.hidden = NO;
-            self.result2.hidden = NO;
-            self.result3.hidden = YES;
-            self.result4.hidden = YES;
-            self.result5.hidden = NO;
-            self.result6.hidden = NO;
-            self.result7.hidden = YES;
-            self.result8.hidden = YES;
-            self.result9.hidden = NO;
-            self.result10.hidden = NO;
-            self.result11.hidden = YES;
-            self.result12.hidden = YES;
-            self.result13.hidden = YES;
-            self.result14.hidden = YES;
-            self.result15.hidden = YES;
-            self.result16.hidden = YES;
-            
-        }
-        else if (row == 10) {
-            self.matrixA1.hidden = NO;
-            self.matrixA2.hidden = NO;
-            self.matrixA3.hidden = NO;
-            self.matrixA4.hidden = YES;
-            self.matrixA5.hidden = NO;
-            self.matrixA6.hidden = NO;
-            self.matrixA7.hidden = NO;
-            self.matrixA8.hidden = YES;
-            self.matrixA9.hidden = NO;
-            self.matrixA10.hidden = NO;
-            self.matrixA11.hidden = NO;
-            self.matrixA12.hidden = YES;
-            self.matrixA13.hidden = YES;
-            self.matrixA14.hidden = YES;
-            self.matrixA15.hidden = YES;
-            self.matrixA16.hidden = YES;
-            
-            self.result1.hidden = NO;
-            self.result2.hidden = NO;
-            self.result3.hidden = NO;
-            self.result4.hidden = YES;
-            self.result5.hidden = NO;
-            self.result6.hidden = NO;
-            self.result7.hidden = NO;
-            self.result8.hidden = YES;
-            self.result9.hidden = NO;
-            self.result10.hidden = NO;
-            self.result11.hidden = NO;
-            self.result12.hidden = YES;
-            self.result13.hidden = YES;
-            self.result14.hidden = YES;
-            self.result15.hidden = YES;
-            self.result16.hidden = YES;
-            
-        }
-        else if (row == 11) {
-            self.matrixA1.hidden = NO;
-            self.matrixA2.hidden = NO;
-            self.matrixA3.hidden = NO;
-            self.matrixA4.hidden = NO;
-            self.matrixA5.hidden = NO;
-            self.matrixA6.hidden = NO;
-            self.matrixA7.hidden = NO;
-            self.matrixA8.hidden = NO;
-            self.matrixA9.hidden = NO;
-            self.matrixA10.hidden = NO;
-            self.matrixA11.hidden = NO;
-            self.matrixA12.hidden = NO;
-            self.matrixA13.hidden = YES;
-            self.matrixA14.hidden = YES;
-            self.matrixA15.hidden = YES;
-            self.matrixA16.hidden = YES;
-            
-            self.result1.hidden = NO;
-            self.result2.hidden = NO;
-            self.result3.hidden = NO;
-            self.result4.hidden = NO;
-            self.result5.hidden = NO;
-            self.result6.hidden = NO;
-            self.result7.hidden = NO;
-            self.result8.hidden = NO;
-            self.result9.hidden = NO;
-            self.result10.hidden = NO;
-            self.result11.hidden = NO;
-            self.result12.hidden = NO;
-            self.result13.hidden = YES;
-            self.result14.hidden = YES;
-            self.result15.hidden = YES;
-            self.result16.hidden = YES;
-            
-        }
-        else if (row == 12) {
-            self.matrixA1.hidden = NO;
-            self.matrixA2.hidden = YES;
-            self.matrixA3.hidden = YES;
-            self.matrixA4.hidden = YES;
-            self.matrixA5.hidden = NO;
-            self.matrixA6.hidden = YES;
-            self.matrixA7.hidden = YES;
-            self.matrixA8.hidden = YES;
-            self.matrixA9.hidden = NO;
-            self.matrixA10.hidden = YES;
-            self.matrixA11.hidden = YES;
-            self.matrixA12.hidden = YES;
-            self.matrixA13.hidden = NO;
-            self.matrixA14.hidden = YES;
-            self.matrixA15.hidden = YES;
-            self.matrixA16.hidden = YES;
-            
-            self.result1.hidden = NO;
-            self.result2.hidden = YES;
-            self.result3.hidden = YES;
-            self.result4.hidden = YES;
-            self.result5.hidden = NO;
-            self.result6.hidden = YES;
-            self.result7.hidden = YES;
-            self.result8.hidden = YES;
-            self.result9.hidden = NO;
-            self.result10.hidden = YES;
-            self.result11.hidden = YES;
-            self.result12.hidden = YES;
-            self.result13.hidden = NO;
-            self.result14.hidden = YES;
-            self.result15.hidden = YES;
-            self.result16.hidden = YES;
-            
-        }
-        else if (row == 13) {
-            self.matrixA1.hidden = NO;
-            self.matrixA2.hidden = NO;
-            self.matrixA3.hidden = YES;
-            self.matrixA4.hidden = YES;
-            self.matrixA5.hidden = NO;
-            self.matrixA6.hidden = NO;
-            self.matrixA7.hidden = YES;
-            self.matrixA8.hidden = YES;
-            self.matrixA9.hidden = NO;
-            self.matrixA10.hidden = NO;
-            self.matrixA11.hidden = YES;
-            self.matrixA12.hidden = YES;
-            self.matrixA13.hidden = NO;
-            self.matrixA14.hidden = NO;
-            self.matrixA15.hidden = YES;
-            self.matrixA16.hidden = YES;
-            
-            self.result1.hidden = NO;
-            self.result2.hidden = NO;
-            self.result3.hidden = YES;
-            self.result4.hidden = YES;
-            self.result5.hidden = NO;
-            self.result6.hidden = NO;
-            self.result7.hidden = YES;
-            self.result8.hidden = YES;
-            self.result9.hidden = NO;
-            self.result10.hidden = NO;
-            self.result11.hidden = YES;
-            self.result12.hidden = YES;
-            self.result13.hidden = NO;
-            self.result14.hidden = NO;
-            self.result15.hidden = YES;
-            self.result16.hidden = YES;
-            
-        }
-        else if (row == 14) {
-            self.matrixA1.hidden = NO;
-            self.matrixA2.hidden = NO;
-            self.matrixA3.hidden = NO;
-            self.matrixA4.hidden = YES;
-            self.matrixA5.hidden = NO;
-            self.matrixA6.hidden = NO;
-            self.matrixA7.hidden = NO;
-            self.matrixA8.hidden = YES;
-            self.matrixA9.hidden = NO;
-            self.matrixA10.hidden = NO;
-            self.matrixA11.hidden = NO;
-            self.matrixA12.hidden = YES;
-            self.matrixA13.hidden = NO;
-            self.matrixA14.hidden = NO;
-            self.matrixA15.hidden = NO;
-            self.matrixA16.hidden = YES;
-       
-            self.result1.hidden = NO;
-            self.result2.hidden = NO;
-            self.result3.hidden = NO;
-            self.result4.hidden = YES;
-            self.result5.hidden = NO;
-            self.result6.hidden = NO;
-            self.result7.hidden = NO;
-            self.result8.hidden = YES;
-            self.result9.hidden = NO;
-            self.result10.hidden = NO;
-            self.result11.hidden = NO;
-            self.result12.hidden = YES;
-            self.result13.hidden = NO;
-            self.result14.hidden = NO;
-            self.result15.hidden = NO;
-            self.result16.hidden = YES;
-            
-        }
-        else if (row == 15) {
-            self.matrixA1.hidden = NO;
-            self.matrixA2.hidden = NO;
-            self.matrixA3.hidden = NO;
-            self.matrixA4.hidden = NO;
-            self.matrixA5.hidden = NO;
-            self.matrixA6.hidden = NO;
-            self.matrixA7.hidden = NO;
-            self.matrixA8.hidden = NO;
-            self.matrixA9.hidden = NO;
-            self.matrixA10.hidden = NO;
-            self.matrixA11.hidden = NO;
-            self.matrixA12.hidden = NO;
-            self.matrixA13.hidden = NO;
-            self.matrixA14.hidden = NO;
-            self.matrixA15.hidden = NO;
-            self.matrixA16.hidden = NO;
-            
-            self.result1.hidden = NO;
-            self.result2.hidden = NO;
-            self.result3.hidden = NO;
-            self.result4.hidden = NO;
-            self.result5.hidden = NO;
-            self.result6.hidden = NO;
-            self.result7.hidden = NO;
-            self.result8.hidden = NO;
-            self.result9.hidden = NO;
-            self.result10.hidden = NO;
-            self.result11.hidden = NO;
-            self.result12.hidden = NO;
-            self.result13.hidden = NO;
-            self.result14.hidden = NO;
-            self.result15.hidden = NO;
-            self.result16.hidden = NO;
-            
-        }
+       else if ((firstPickerRow == 0) && (row  == 2)) {
+           self.matrixB1.hidden = NO;
+           self.matrixB2.hidden = NO;
+           self.matrixB3.hidden = NO;
+           self.matrixB4.hidden = YES;
+           self.matrixB5.hidden = YES;
+           self.matrixB6.hidden = YES;
+           self.matrixB7.hidden = YES;
+           self.matrixB8.hidden = YES;
+           self.matrixB9.hidden = YES;
+           self.matrixB10.hidden = YES;
+           self.matrixB11.hidden = YES;
+           self.matrixB12.hidden = YES;
+           self.matrixB13.hidden = YES;
+           self.matrixB14.hidden = YES;
+           self.matrixB15.hidden = YES;
+           self.matrixB16.hidden = YES;
+           
+           self.matrixA1.hidden = NO;
+           self.matrixA2.hidden = YES;
+           self.matrixA3.hidden = YES;
+           self.matrixA4.hidden = YES;
+           self.matrixA5.hidden = YES;
+           self.matrixA6.hidden = YES;
+           self.matrixA7.hidden = YES;
+           self.matrixA8.hidden = YES;
+           self.matrixA9.hidden = YES;
+           self.matrixA10.hidden = YES;
+           self.matrixA11.hidden = YES;
+           self.matrixA12.hidden = YES;
+           self.matrixA13.hidden = YES;
+           self.matrixA14.hidden = YES;
+           self.matrixA15.hidden = YES;
+           self.matrixA16.hidden = YES;
+           
+           self.result1.hidden = NO;
+           self.result2.hidden = NO;
+           self.result3.hidden = NO;
+           self.result4.hidden = YES;
+           self.result5.hidden = YES;
+           self.result6.hidden = YES;
+           self.result7.hidden = YES;
+           self.result8.hidden = YES;
+           self.result9.hidden = YES;
+           self.result10.hidden = YES;
+           self.result11.hidden = YES;
+           self.result12.hidden = YES;
+           self.result13.hidden = YES;
+           self.result14.hidden = YES;
+           self.result15.hidden = YES;
+           self.result16.hidden = YES;
+       }
+       else if ((firstPickerRow == 0) && (row  == 3)) {
+           self.matrixB1.hidden = NO;
+           self.matrixB2.hidden = NO;
+           self.matrixB3.hidden = NO;
+           self.matrixB4.hidden = NO;
+           self.matrixB5.hidden = YES;
+           self.matrixB6.hidden = YES;
+           self.matrixB7.hidden = YES;
+           self.matrixB8.hidden = YES;
+           self.matrixB9.hidden = YES;
+           self.matrixB10.hidden = YES;
+           self.matrixB11.hidden = YES;
+           self.matrixB12.hidden = YES;
+           self.matrixB13.hidden = YES;
+           self.matrixB14.hidden = YES;
+           self.matrixB15.hidden = YES;
+           self.matrixB16.hidden = YES;
+           
+           self.matrixA1.hidden = NO;
+           self.matrixA2.hidden = YES;
+           self.matrixA3.hidden = YES;
+           self.matrixA4.hidden = YES;
+           self.matrixA5.hidden = YES;
+           self.matrixA6.hidden = YES;
+           self.matrixA7.hidden = YES;
+           self.matrixA8.hidden = YES;
+           self.matrixA9.hidden = YES;
+           self.matrixA10.hidden = YES;
+           self.matrixA11.hidden = YES;
+           self.matrixA12.hidden = YES;
+           self.matrixA13.hidden = YES;
+           self.matrixA14.hidden = YES;
+           self.matrixA15.hidden = YES;
+           self.matrixA16.hidden = YES;
+           
+           self.result1.hidden = NO;
+           self.result2.hidden = NO;
+           self.result3.hidden = NO;
+           self.result4.hidden = NO;
+           self.result5.hidden = YES;
+           self.result6.hidden = YES;
+           self.result7.hidden = YES;
+           self.result8.hidden = YES;
+           self.result9.hidden = YES;
+           self.result10.hidden = YES;
+           self.result11.hidden = YES;
+           self.result12.hidden = YES;
+           self.result13.hidden = YES;
+           self.result14.hidden = YES;
+           self.result15.hidden = YES;
+           self.result16.hidden = YES;
+       }
+       else if ((firstPickerRow == 1) && (row  == 0)) {
+           self.matrixB1.hidden = NO;
+           self.matrixB2.hidden = YES;
+           self.matrixB3.hidden = YES;
+           self.matrixB4.hidden = YES;
+           self.matrixB5.hidden = NO;
+           self.matrixB6.hidden = YES;
+           self.matrixB7.hidden = YES;
+           self.matrixB8.hidden = YES;
+           self.matrixB9.hidden = YES;
+           self.matrixB10.hidden = YES;
+           self.matrixB11.hidden = YES;
+           self.matrixB12.hidden = YES;
+           self.matrixB13.hidden = YES;
+           self.matrixB14.hidden = YES;
+           self.matrixB15.hidden = YES;
+           self.matrixB16.hidden = YES;
+           
+           self.matrixA1.hidden = NO;
+           self.matrixA2.hidden = NO;
+           self.matrixA3.hidden = YES;
+           self.matrixA4.hidden = YES;
+           self.matrixA5.hidden = YES;
+           self.matrixA6.hidden = YES;
+           self.matrixA7.hidden = YES;
+           self.matrixA8.hidden = YES;
+           self.matrixA9.hidden = YES;
+           self.matrixA10.hidden = YES;
+           self.matrixA11.hidden = YES;
+           self.matrixA12.hidden = YES;
+           self.matrixA13.hidden = YES;
+           self.matrixA14.hidden = YES;
+           self.matrixA15.hidden = YES;
+           self.matrixA16.hidden = YES;
+           
+           self.result1.hidden = NO;
+           self.result2.hidden = YES;
+           self.result3.hidden = YES;
+           self.result4.hidden = YES;
+           self.result5.hidden = YES;
+           self.result6.hidden = YES;
+           self.result7.hidden = YES;
+           self.result8.hidden = YES;
+           self.result9.hidden = YES;
+           self.result10.hidden = YES;
+           self.result11.hidden = YES;
+           self.result12.hidden = YES;
+           self.result13.hidden = YES;
+           self.result14.hidden = YES;
+           self.result15.hidden = YES;
+           self.result16.hidden = YES;
+       }
+       else if ((firstPickerRow == 1) && (row  == 1)) {
+           self.matrixB1.hidden = NO;
+           self.matrixB2.hidden = NO;
+           self.matrixB3.hidden = YES;
+           self.matrixB4.hidden = YES;
+           self.matrixB5.hidden = NO;
+           self.matrixB6.hidden = NO;
+           self.matrixB7.hidden = YES;
+           self.matrixB8.hidden = YES;
+           self.matrixB9.hidden = YES;
+           self.matrixB10.hidden = YES;
+           self.matrixB11.hidden = YES;
+           self.matrixB12.hidden = YES;
+           self.matrixB13.hidden = YES;
+           self.matrixB14.hidden = YES;
+           self.matrixB15.hidden = YES;
+           self.matrixB16.hidden = YES;
+           
+           self.matrixA1.hidden = NO;
+           self.matrixA2.hidden = NO;
+           self.matrixA3.hidden = YES;
+           self.matrixA4.hidden = YES;
+           self.matrixA5.hidden = YES;
+           self.matrixA6.hidden = YES;
+           self.matrixA7.hidden = YES;
+           self.matrixA8.hidden = YES;
+           self.matrixA9.hidden = YES;
+           self.matrixA10.hidden = YES;
+           self.matrixA11.hidden = YES;
+           self.matrixA12.hidden = YES;
+           self.matrixA13.hidden = YES;
+           self.matrixA14.hidden = YES;
+           self.matrixA15.hidden = YES;
+           self.matrixA16.hidden = YES;
+           
+           self.result1.hidden = NO;
+           self.result2.hidden = NO;
+           self.result3.hidden = YES;
+           self.result4.hidden = YES;
+           self.result5.hidden = YES;
+           self.result6.hidden = YES;
+           self.result7.hidden = YES;
+           self.result8.hidden = YES;
+           self.result9.hidden = YES;
+           self.result10.hidden = YES;
+           self.result11.hidden = YES;
+           self.result12.hidden = YES;
+           self.result13.hidden = YES;
+           self.result14.hidden = YES;
+           self.result15.hidden = YES;
+           self.result16.hidden = YES;
+       }
+       else if ((firstPickerRow == 1) && (row  == 2)) {
+           self.matrixB1.hidden = NO;
+           self.matrixB2.hidden = NO;
+           self.matrixB3.hidden = NO;
+           self.matrixB4.hidden = YES;
+           self.matrixB5.hidden = NO;
+           self.matrixB6.hidden = NO;
+           self.matrixB7.hidden = NO;
+           self.matrixB8.hidden = YES;
+           self.matrixB9.hidden = YES;
+           self.matrixB10.hidden = YES;
+           self.matrixB11.hidden = YES;
+           self.matrixB12.hidden = YES;
+           self.matrixB13.hidden = YES;
+           self.matrixB14.hidden = YES;
+           self.matrixB15.hidden = YES;
+           self.matrixB16.hidden = YES;
+           
+           self.matrixA1.hidden = NO;
+           self.matrixA2.hidden = NO;
+           self.matrixA3.hidden = YES;
+           self.matrixA4.hidden = YES;
+           self.matrixA5.hidden = YES;
+           self.matrixA6.hidden = YES;
+           self.matrixA7.hidden = YES;
+           self.matrixA8.hidden = YES;
+           self.matrixA9.hidden = YES;
+           self.matrixA10.hidden = YES;
+           self.matrixA11.hidden = YES;
+           self.matrixA12.hidden = YES;
+           self.matrixA13.hidden = YES;
+           self.matrixA14.hidden = YES;
+           self.matrixA15.hidden = YES;
+           self.matrixA16.hidden = YES;
+           
+           self.result1.hidden = NO;
+           self.result2.hidden = NO;
+           self.result3.hidden = NO;
+           self.result4.hidden = YES;
+           self.result5.hidden = YES;
+           self.result6.hidden = YES;
+           self.result7.hidden = YES;
+           self.result8.hidden = YES;
+           self.result9.hidden = YES;
+           self.result10.hidden = YES;
+           self.result11.hidden = YES;
+           self.result12.hidden = YES;
+           self.result13.hidden = YES;
+           self.result14.hidden = YES;
+           self.result15.hidden = YES;
+           self.result16.hidden = YES;
+       }
+       else if ((firstPickerRow == 1) && (row  == 3)) {
+           self.matrixB1.hidden = NO;
+           self.matrixB2.hidden = NO;
+           self.matrixB3.hidden = NO;
+           self.matrixB4.hidden = NO;
+           self.matrixB5.hidden = NO;
+           self.matrixB6.hidden = NO;
+           self.matrixB7.hidden = NO;
+           self.matrixB8.hidden = NO;
+           self.matrixB9.hidden = YES;
+           self.matrixB10.hidden = YES;
+           self.matrixB11.hidden = YES;
+           self.matrixB12.hidden = YES;
+           self.matrixB13.hidden = YES;
+           self.matrixB14.hidden = YES;
+           self.matrixB15.hidden = YES;
+           self.matrixB16.hidden = YES;
+           
+           self.matrixA1.hidden = NO;
+           self.matrixA2.hidden = NO;
+           self.matrixA3.hidden = YES;
+           self.matrixA4.hidden = YES;
+           self.matrixA5.hidden = YES;
+           self.matrixA6.hidden = YES;
+           self.matrixA7.hidden = YES;
+           self.matrixA8.hidden = YES;
+           self.matrixA9.hidden = YES;
+           self.matrixA10.hidden = YES;
+           self.matrixA11.hidden = YES;
+           self.matrixA12.hidden = YES;
+           self.matrixA13.hidden = YES;
+           self.matrixA14.hidden = YES;
+           self.matrixA15.hidden = YES;
+           self.matrixA16.hidden = YES;
+           
+           self.result1.hidden = NO;
+           self.result2.hidden = NO;
+           self.result3.hidden = NO;
+           self.result4.hidden = NO;
+           self.result5.hidden = YES;
+           self.result6.hidden = YES;
+           self.result7.hidden = YES;
+           self.result8.hidden = YES;
+           self.result9.hidden = YES;
+           self.result10.hidden = YES;
+           self.result11.hidden = YES;
+           self.result12.hidden = YES;
+           self.result13.hidden = YES;
+           self.result14.hidden = YES;
+           self.result15.hidden = YES;
+           self.result16.hidden = YES;
+       }
+       else if ((firstPickerRow == 2) && (row  == 0)) {
+           self.matrixB1.hidden = NO;
+           self.matrixB2.hidden = YES;
+           self.matrixB3.hidden = YES;
+           self.matrixB4.hidden = YES;
+           self.matrixB5.hidden = NO;
+           self.matrixB6.hidden = YES;
+           self.matrixB7.hidden = YES;
+           self.matrixB8.hidden = YES;
+           self.matrixB9.hidden = NO;
+           self.matrixB10.hidden = YES;
+           self.matrixB11.hidden = YES;
+           self.matrixB12.hidden = YES;
+           self.matrixB13.hidden = YES;
+           self.matrixB14.hidden = YES;
+           self.matrixB15.hidden = YES;
+           self.matrixB16.hidden = YES;
+           
+           self.matrixA1.hidden = NO;
+           self.matrixA2.hidden = NO;
+           self.matrixA3.hidden = NO;
+           self.matrixA4.hidden = YES;
+           self.matrixA5.hidden = YES;
+           self.matrixA6.hidden = YES;
+           self.matrixA7.hidden = YES;
+           self.matrixA8.hidden = YES;
+           self.matrixA9.hidden = YES;
+           self.matrixA10.hidden = YES;
+           self.matrixA11.hidden = YES;
+           self.matrixA12.hidden = YES;
+           self.matrixA13.hidden = YES;
+           self.matrixA14.hidden = YES;
+           self.matrixA15.hidden = YES;
+           self.matrixA16.hidden = YES;
+           
+           self.result1.hidden = NO;
+           self.result2.hidden = YES;
+           self.result3.hidden = YES;
+           self.result4.hidden = YES;
+           self.result5.hidden = YES;
+           self.result6.hidden = YES;
+           self.result7.hidden = YES;
+           self.result8.hidden = YES;
+           self.result9.hidden = YES;
+           self.result10.hidden = YES;
+           self.result11.hidden = YES;
+           self.result12.hidden = YES;
+           self.result13.hidden = YES;
+           self.result14.hidden = YES;
+           self.result15.hidden = YES;
+           self.result16.hidden = YES;
+       }
+       else if ((firstPickerRow == 2) && (row  == 1)) {
+           self.matrixB1.hidden = NO;
+           self.matrixB2.hidden = NO;
+           self.matrixB3.hidden = YES;
+           self.matrixB4.hidden = YES;
+           self.matrixB5.hidden = NO;
+           self.matrixB6.hidden = NO;
+           self.matrixB7.hidden = YES;
+           self.matrixB8.hidden = YES;
+           self.matrixB9.hidden = NO;
+           self.matrixB10.hidden = NO;
+           self.matrixB11.hidden = YES;
+           self.matrixB12.hidden = YES;
+           self.matrixB13.hidden = YES;
+           self.matrixB14.hidden = YES;
+           self.matrixB15.hidden = YES;
+           self.matrixB16.hidden = YES;
+           
+           self.matrixA1.hidden = NO;
+           self.matrixA2.hidden = NO;
+           self.matrixA3.hidden = NO;
+           self.matrixA4.hidden = YES;
+           self.matrixA5.hidden = YES;
+           self.matrixA6.hidden = YES;
+           self.matrixA7.hidden = YES;
+           self.matrixA8.hidden = YES;
+           self.matrixA9.hidden = YES;
+           self.matrixA10.hidden = YES;
+           self.matrixA11.hidden = YES;
+           self.matrixA12.hidden = YES;
+           self.matrixA13.hidden = YES;
+           self.matrixA14.hidden = YES;
+           self.matrixA15.hidden = YES;
+           self.matrixA16.hidden = YES;
+           
+           self.result1.hidden = NO;
+           self.result2.hidden = NO;
+           self.result3.hidden = YES;
+           self.result4.hidden = YES;
+           self.result5.hidden = YES;
+           self.result6.hidden = YES;
+           self.result7.hidden = YES;
+           self.result8.hidden = YES;
+           self.result9.hidden = YES;
+           self.result10.hidden = YES;
+           self.result11.hidden = YES;
+           self.result12.hidden = YES;
+           self.result13.hidden = YES;
+           self.result14.hidden = YES;
+           self.result15.hidden = YES;
+           self.result16.hidden = YES;
+       }
+       else if ((firstPickerRow == 2) && (row  == 2)) {
+           self.matrixB1.hidden = NO;
+           self.matrixB2.hidden = NO;
+           self.matrixB3.hidden = NO;
+           self.matrixB4.hidden = YES;
+           self.matrixB5.hidden = NO;
+           self.matrixB6.hidden = NO;
+           self.matrixB7.hidden = NO;
+           self.matrixB8.hidden = YES;
+           self.matrixB9.hidden = NO;
+           self.matrixB10.hidden = NO;
+           self.matrixB11.hidden = NO;
+           self.matrixB12.hidden = YES;
+           self.matrixB13.hidden = YES;
+           self.matrixB14.hidden = YES;
+           self.matrixB15.hidden = YES;
+           self.matrixB16.hidden = YES;
+           
+           self.matrixA1.hidden = NO;
+           self.matrixA2.hidden = NO;
+           self.matrixA3.hidden = NO;
+           self.matrixA4.hidden = YES;
+           self.matrixA5.hidden = YES;
+           self.matrixA6.hidden = YES;
+           self.matrixA7.hidden = YES;
+           self.matrixA8.hidden = YES;
+           self.matrixA9.hidden = YES;
+           self.matrixA10.hidden = YES;
+           self.matrixA11.hidden = YES;
+           self.matrixA12.hidden = YES;
+           self.matrixA13.hidden = YES;
+           self.matrixA14.hidden = YES;
+           self.matrixA15.hidden = YES;
+           self.matrixA16.hidden = YES;
+           
+           self.result1.hidden = NO;
+           self.result2.hidden = NO;
+           self.result3.hidden = NO;
+           self.result4.hidden = YES;
+           self.result5.hidden = YES;
+           self.result6.hidden = YES;
+           self.result7.hidden = YES;
+           self.result8.hidden = YES;
+           self.result9.hidden = YES;
+           self.result10.hidden = YES;
+           self.result11.hidden = YES;
+           self.result12.hidden = YES;
+           self.result13.hidden = YES;
+           self.result14.hidden = YES;
+           self.result15.hidden = YES;
+           self.result16.hidden = YES;
+       }
+       else if ((firstPickerRow == 2) && (row  == 3)) {
+           self.matrixB1.hidden = NO;
+           self.matrixB2.hidden = NO;
+           self.matrixB3.hidden = NO;
+           self.matrixB4.hidden = NO;
+           self.matrixB5.hidden = NO;
+           self.matrixB6.hidden = NO;
+           self.matrixB7.hidden = NO;
+           self.matrixB8.hidden = NO;
+           self.matrixB9.hidden = NO;
+           self.matrixB10.hidden = NO;
+           self.matrixB11.hidden = NO;
+           self.matrixB12.hidden = NO;
+           self.matrixB13.hidden = YES;
+           self.matrixB14.hidden = YES;
+           self.matrixB15.hidden = YES;
+           self.matrixB16.hidden = YES;
+           
+           self.matrixA1.hidden = NO;
+           self.matrixA2.hidden = NO;
+           self.matrixA3.hidden = NO;
+           self.matrixA4.hidden = YES;
+           self.matrixA5.hidden = YES;
+           self.matrixA6.hidden = YES;
+           self.matrixA7.hidden = YES;
+           self.matrixA8.hidden = YES;
+           self.matrixA9.hidden = YES;
+           self.matrixA10.hidden = YES;
+           self.matrixA11.hidden = YES;
+           self.matrixA12.hidden = YES;
+           self.matrixA13.hidden = YES;
+           self.matrixA14.hidden = YES;
+           self.matrixA15.hidden = YES;
+           self.matrixA16.hidden = YES;
+           
+           self.result1.hidden = NO;
+           self.result2.hidden = NO;
+           self.result3.hidden = NO;
+           self.result4.hidden = NO;
+           self.result5.hidden = YES;
+           self.result6.hidden = YES;
+           self.result7.hidden = YES;
+           self.result8.hidden = YES;
+           self.result9.hidden = YES;
+           self.result10.hidden = YES;
+           self.result11.hidden = YES;
+           self.result12.hidden = YES;
+           self.result13.hidden = YES;
+           self.result14.hidden = YES;
+           self.result15.hidden = YES;
+           self.result16.hidden = YES;
+       }
+       else if ((firstPickerRow == 3) && (row  == 0)) {
+           self.matrixB1.hidden = NO;
+           self.matrixB2.hidden = YES;
+           self.matrixB3.hidden = YES;
+           self.matrixB4.hidden = YES;
+           self.matrixB5.hidden = NO;
+           self.matrixB6.hidden = YES;
+           self.matrixB7.hidden = YES;
+           self.matrixB8.hidden = YES;
+           self.matrixB9.hidden = NO;
+           self.matrixB10.hidden = YES;
+           self.matrixB11.hidden = YES;
+           self.matrixB12.hidden = YES;
+           self.matrixB13.hidden = NO;
+           self.matrixB14.hidden = YES;
+           self.matrixB15.hidden = YES;
+           self.matrixB16.hidden = YES;
+           
+           self.matrixA1.hidden = NO;
+           self.matrixA2.hidden = NO;
+           self.matrixA3.hidden = NO;
+           self.matrixA4.hidden = NO;
+           self.matrixA5.hidden = YES;
+           self.matrixA6.hidden = YES;
+           self.matrixA7.hidden = YES;
+           self.matrixA8.hidden = YES;
+           self.matrixA9.hidden = YES;
+           self.matrixA10.hidden = YES;
+           self.matrixA11.hidden = YES;
+           self.matrixA12.hidden = YES;
+           self.matrixA13.hidden = YES;
+           self.matrixA14.hidden = YES;
+           self.matrixA15.hidden = YES;
+           self.matrixA16.hidden = YES;
+           
+           self.result1.hidden = NO;
+           self.result2.hidden = YES;
+           self.result3.hidden = YES;
+           self.result4.hidden = YES;
+           self.result5.hidden = YES;
+           self.result6.hidden = YES;
+           self.result7.hidden = YES;
+           self.result8.hidden = YES;
+           self.result9.hidden = YES;
+           self.result10.hidden = YES;
+           self.result11.hidden = YES;
+           self.result12.hidden = YES;
+           self.result13.hidden = YES;
+           self.result14.hidden = YES;
+           self.result15.hidden = YES;
+           self.result16.hidden = YES;
+       }
+       else if ((firstPickerRow == 3) && (row  == 1)) {
+           self.matrixB1.hidden = NO;
+           self.matrixB2.hidden = NO;
+           self.matrixB3.hidden = YES;
+           self.matrixB4.hidden = YES;
+           self.matrixB5.hidden = NO;
+           self.matrixB6.hidden = NO;
+           self.matrixB7.hidden = YES;
+           self.matrixB8.hidden = YES;
+           self.matrixB9.hidden = NO;
+           self.matrixB10.hidden = NO;
+           self.matrixB11.hidden = YES;
+           self.matrixB12.hidden = YES;
+           self.matrixB13.hidden = NO;
+           self.matrixB14.hidden = NO;
+           self.matrixB15.hidden = YES;
+           self.matrixB16.hidden = YES;
+           
+           self.matrixA1.hidden = NO;
+           self.matrixA2.hidden = NO;
+           self.matrixA3.hidden = NO;
+           self.matrixA4.hidden = NO;
+           self.matrixA5.hidden = YES;
+           self.matrixA6.hidden = YES;
+           self.matrixA7.hidden = YES;
+           self.matrixA8.hidden = YES;
+           self.matrixA9.hidden = YES;
+           self.matrixA10.hidden = YES;
+           self.matrixA11.hidden = YES;
+           self.matrixA12.hidden = YES;
+           self.matrixA13.hidden = YES;
+           self.matrixA14.hidden = YES;
+           self.matrixA15.hidden = YES;
+           self.matrixA16.hidden = YES;
+           
+           self.result1.hidden = NO;
+           self.result2.hidden = NO;
+           self.result3.hidden = YES;
+           self.result4.hidden = YES;
+           self.result5.hidden = YES;
+           self.result6.hidden = YES;
+           self.result7.hidden = YES;
+           self.result8.hidden = YES;
+           self.result9.hidden = YES;
+           self.result10.hidden = YES;
+           self.result11.hidden = YES;
+           self.result12.hidden = YES;
+           self.result13.hidden = YES;
+           self.result14.hidden = YES;
+           self.result15.hidden = YES;
+           self.result16.hidden = YES;
+       }
+       else if ((firstPickerRow == 3) && (row  == 2)) {
+           self.matrixB1.hidden = NO;
+           self.matrixB2.hidden = NO;
+           self.matrixB3.hidden = NO;
+           self.matrixB4.hidden = YES;
+           self.matrixB5.hidden = NO;
+           self.matrixB6.hidden = NO;
+           self.matrixB7.hidden = NO;
+           self.matrixB8.hidden = YES;
+           self.matrixB9.hidden = NO;
+           self.matrixB10.hidden = NO;
+           self.matrixB11.hidden = NO;
+           self.matrixB12.hidden = YES;
+           self.matrixB13.hidden = NO;
+           self.matrixB14.hidden = NO;
+           self.matrixB15.hidden = NO;
+           self.matrixB16.hidden = YES;
+           
+           self.matrixA1.hidden = NO;
+           self.matrixA2.hidden = NO;
+           self.matrixA3.hidden = NO;
+           self.matrixA4.hidden = NO;
+           self.matrixA5.hidden = YES;
+           self.matrixA6.hidden = YES;
+           self.matrixA7.hidden = YES;
+           self.matrixA8.hidden = YES;
+           self.matrixA9.hidden = YES;
+           self.matrixA10.hidden = YES;
+           self.matrixA11.hidden = YES;
+           self.matrixA12.hidden = YES;
+           self.matrixA13.hidden = YES;
+           self.matrixA14.hidden = YES;
+           self.matrixA15.hidden = YES;
+           self.matrixA16.hidden = YES;
+           
+           self.result1.hidden = NO;
+           self.result2.hidden = NO;
+           self.result3.hidden = NO;
+           self.result4.hidden = YES;
+           self.result5.hidden = YES;
+           self.result6.hidden = YES;
+           self.result7.hidden = YES;
+           self.result8.hidden = YES;
+           self.result9.hidden = YES;
+           self.result10.hidden = YES;
+           self.result11.hidden = YES;
+           self.result12.hidden = YES;
+           self.result13.hidden = YES;
+           self.result14.hidden = YES;
+           self.result15.hidden = YES;
+           self.result16.hidden = YES;
+       }
+       else if ((firstPickerRow == 3) && (row  == 3)) {
+           self.matrixB1.hidden = NO;
+           self.matrixB2.hidden = NO;
+           self.matrixB3.hidden = NO;
+           self.matrixB4.hidden = NO;
+           self.matrixB5.hidden = NO;
+           self.matrixB6.hidden = NO;
+           self.matrixB7.hidden = NO;
+           self.matrixB8.hidden = NO;
+           self.matrixB9.hidden = NO;
+           self.matrixB10.hidden = NO;
+           self.matrixB11.hidden = NO;
+           self.matrixB12.hidden = NO;
+           self.matrixB13.hidden = NO;
+           self.matrixB14.hidden = NO;
+           self.matrixB15.hidden = NO;
+           self.matrixB16.hidden = NO;
+           
+           self.matrixA1.hidden = NO;
+           self.matrixA2.hidden = NO;
+           self.matrixA3.hidden = NO;
+           self.matrixA4.hidden = NO;
+           self.matrixA5.hidden = YES;
+           self.matrixA6.hidden = YES;
+           self.matrixA7.hidden = YES;
+           self.matrixA8.hidden = YES;
+           self.matrixA9.hidden = YES;
+           self.matrixA10.hidden = YES;
+           self.matrixA11.hidden = YES;
+           self.matrixA12.hidden = YES;
+           self.matrixA13.hidden = YES;
+           self.matrixA14.hidden = YES;
+           self.matrixA15.hidden = YES;
+           self.matrixA16.hidden = YES;
+           
+           self.result1.hidden = NO;
+           self.result2.hidden = NO;
+           self.result3.hidden = NO;
+           self.result4.hidden = NO;
+           self.result5.hidden = YES;
+           self.result6.hidden = YES;
+           self.result7.hidden = YES;
+           self.result8.hidden = YES;
+           self.result9.hidden = YES;
+           self.result10.hidden = YES;
+           self.result11.hidden = YES;
+           self.result12.hidden = YES;
+           self.result13.hidden = YES;
+           self.result14.hidden = YES;
+           self.result15.hidden = YES;
+           self.result16.hidden = YES;
+       }
     }
 }
 
-    
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
