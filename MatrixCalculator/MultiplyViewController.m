@@ -91,233 +91,236 @@
     }
     else if (pickerView == self.secondPickerMultiply){
         
-        //title = [matrixSize objectAtIndex:[self.firstPickerMultiply selectedRowInComponent:0]];
+        title = [matrixSize objectAtIndex:[self.firstPickerMultiply selectedRowInComponent:0]];
         
+        
+        //If statements setting the secondPicker to 4 rows depending on what row firstPicker is on.
         NSInteger firstPickerRow = [self.firstPickerMultiply selectedRowInComponent:0];
         if (firstPickerRow == 0) {
             if (row == 0) {
-                title = row1[0];
+                title = matrixSize[0];
             }
             else if (row == 1) {
-                title = row1[1];
+                title = matrixSize[1];
             }
             else if (row == 2) {
-                title = row1[2];
+                title = matrixSize[2];
             }
             else if (row == 3) {
-                title = row1[3];
+                title = matrixSize[3];
             }
         }
         else if (firstPickerRow == 1) {
             if (row == 0) {
-                title = row2[0];
+                title = matrixSize[4];
             }
             else if (row == 1) {
-                title = row2[1];
+                title = matrixSize[5];
             }
             else if (row == 2) {
-                title = row2[2];
+                title = matrixSize[6];
             }
             else if (row == 3) {
-                title = row2[3];
+                title = matrixSize[7];
             }
         }
         else if (firstPickerRow == 2) {
             if (row == 0) {
-                title = row3[0];
+                title = matrixSize[8];
             }
             else if (row == 1) {
-                title = row3[1];
+                title = matrixSize[9];
             }
             else if (row == 2) {
-                title = row3[2];
+                title = matrixSize[10];
             }
             else if (row == 3) {
-                title = row3[3];
+                title = matrixSize[11];
             }
         }
         else if (firstPickerRow == 3) {
             if (row == 0) {
-                title = row4[0];
+                title = matrixSize[12];
             }
             else if (row == 1) {
-                title = row4[1];
+                title = matrixSize[13];
             }
             else if (row == 2) {
-                title = row4[2];
+                title = matrixSize[14];
             }
             else if (row == 3) {
-                title = row4[3];
+                title = matrixSize[15];
             }
         }
         if (firstPickerRow == 4) {
             if (row == 0) {
-                title = row1[0];
+                title = matrixSize[0];
             }
             else if (row == 1) {
-                title = row1[1];
+                title = matrixSize[1];
             }
             else if (row == 2) {
-                title = row1[2];
+                title = matrixSize[2];
             }
             else if (row == 3) {
-                title = row1[3];
+                title = matrixSize[3];
             }
         }
         else if (firstPickerRow == 5) {
             if (row == 0) {
-                title = row2[0];
+                title = matrixSize[4];
             }
             else if (row == 1) {
-                title = row2[1];
+                title = matrixSize[5];
             }
             else if (row == 2) {
-                title = row2[2];
+                title = matrixSize[6];
             }
             else if (row == 3) {
-                title = row2[3];
+                title = matrixSize[7];
             }
         }
         else if (firstPickerRow == 6) {
             if (row == 0) {
-                title = row3[0];
+                title = matrixSize[8];
             }
             else if (row == 1) {
-                title = row3[1];
+                title = matrixSize[9];
             }
             else if (row == 2) {
-                title = row3[2];
+                title = matrixSize[10];
             }
             else if (row == 3) {
-                title = row3[3];
+                title = matrixSize[11];
             }
         }
         else if (firstPickerRow == 7) {
             if (row == 0) {
-                title = row4[0];
+                title = matrixSize[12];
             }
             else if (row == 1) {
-                title = row4[1];
+                title = matrixSize[13];
             }
             else if (row == 2) {
-                title = row4[2];
+                title = matrixSize[14];
             }
             else if (row == 3) {
-                title = row4[3];
+                title = matrixSize[15];
             }
         }
         if (firstPickerRow == 8) {
             if (row == 0) {
-                title = row1[0];
+                title = matrixSize[0];
             }
             else if (row == 1) {
-                title = row1[1];
+                title = matrixSize[1];
             }
             else if (row == 2) {
-                title = row1[2];
+                title = matrixSize[2];
             }
             else if (row == 3) {
-                title = row1[3];
+                title = matrixSize[3];
             }
         }
         else if (firstPickerRow == 9) {
             if (row == 0) {
-                title = row2[0];
+                title = matrixSize[4];
             }
             else if (row == 1) {
-                title = row2[1];
+                title = matrixSize[5];
             }
             else if (row == 2) {
-                title = row2[2];
+                title = matrixSize[6];
             }
             else if (row == 3) {
-                title = row2[3];
+                title = matrixSize[7];
             }
         }
         else if (firstPickerRow == 10) {
             if (row == 0) {
-                title = row3[0];
+                title = matrixSize[8];
             }
             else if (row == 1) {
-                title = row3[1];
+                title = matrixSize[9];
             }
             else if (row == 2) {
-                title = row3[2];
+                title = matrixSize[10];
             }
             else if (row == 3) {
-                title = row3[3];
+                title = matrixSize[11];
             }
         }
         else if (firstPickerRow == 11) {
             if (row == 0) {
-                title = row4[0];
+                title = matrixSize[12];
             }
             else if (row == 1) {
-                title = row4[1];
+                title = matrixSize[13];
             }
             else if (row == 2) {
-                title = row4[2];
+                title = matrixSize[14];
             }
             else if (row == 3) {
-                title = row4[3];
+                title = matrixSize[15];
             }
         }
         if (firstPickerRow == 12) {
             if (row == 0) {
-                title = row1[0];
+                title = matrixSize[0];
             }
             else if (row == 1) {
-                title = row1[1];
+                title = matrixSize[1];
             }
             else if (row == 2) {
-                title = row1[2];
+                title = matrixSize[2];
             }
             else if (row == 3) {
-                title = row1[3];
+                title = matrixSize[3];
             }
         }
         else if (firstPickerRow == 13) {
             if (row == 0) {
-                title = row2[0];
+                title = matrixSize[4];
             }
             else if (row == 1) {
-                title = row2[1];
+                title = matrixSize[5];
             }
             else if (row == 2) {
-                title = row2[2];
+                title = matrixSize[6];
             }
             else if (row == 3) {
-                title = row2[3];
+                title = matrixSize[7];
             }
         }
         else if (firstPickerRow == 14) {
             if (row == 0) {
-                title = row3[0];
+                title = matrixSize[8];
             }
             else if (row == 1) {
-                title = row3[1];
+                title = matrixSize[9];
             }
             else if (row == 2) {
-                title = row3[2];
+                title = matrixSize[10];
             }
             else if (row == 3) {
-                title = row3[3];
+                title = matrixSize[11];
             }
         }
         else if (firstPickerRow == 15) {
             if (row == 0) {
-                title = row4[0];
+                title = matrixSize[12];
             }
             else if (row == 1) {
-                title = row4[1];
+                title = matrixSize[13];
             }
             else if (row == 2) {
-                title = row4[2];
+                title = matrixSize[14];
             }
             else if (row == 3) {
-                title = row4[3];
+                title = matrixSize[15];
             }
         }
+        
     }
     
     return title;
@@ -327,8 +330,9 @@
     
     self.secondPickerMultiply.hidden = NO;
     [self.secondPickerMultiply reloadAllComponents];
-    
-    //hide textfields using picker
+    NSInteger firstPickerRow = [self.firstPickerMultiply selectedRowInComponent:0];
+
+    //If statements to hide textfields
 
     if (pickerView == self.firstPickerMultiply) {
         NSInteger row = [self.firstPickerMultiply selectedRowInComponent:0];
@@ -349,24 +353,7 @@
             self.matrixA14.hidden = YES;
             self.matrixA15.hidden = YES;
             self.matrixA16.hidden = YES;
-            
-            self.matrixB1.hidden = NO;
-            self.matrixB2.hidden = YES;
-            self.matrixB3.hidden = YES;
-            self.matrixB4.hidden = YES;
-            self.matrixB5.hidden = YES;
-            self.matrixB6.hidden = YES;
-            self.matrixB7.hidden = YES;
-            self.matrixB8.hidden = YES;
-            self.matrixB9.hidden = YES;
-            self.matrixB10.hidden = YES;
-            self.matrixB11.hidden = YES;
-            self.matrixB12.hidden = YES;
-            self.matrixB13.hidden = YES;
-            self.matrixB14.hidden = YES;
-            self.matrixB15.hidden = YES;
-            self.matrixB16.hidden = YES;
-            
+
             self.result1.hidden = NO;
             self.result2.hidden = YES;
             self.result3.hidden = YES;
@@ -402,24 +389,7 @@
             self.matrixA14.hidden = YES;
             self.matrixA15.hidden = YES;
             self.matrixA16.hidden = YES;
-            
-            self.matrixB1.hidden = NO;
-            self.matrixB2.hidden = NO;
-            self.matrixB3.hidden = YES;
-            self.matrixB4.hidden = YES;
-            self.matrixB5.hidden = YES;
-            self.matrixB6.hidden = YES;
-            self.matrixB7.hidden = YES;
-            self.matrixB8.hidden = YES;
-            self.matrixB9.hidden = YES;
-            self.matrixB10.hidden = YES;
-            self.matrixB11.hidden = YES;
-            self.matrixB12.hidden = YES;
-            self.matrixB13.hidden = YES;
-            self.matrixB14.hidden = YES;
-            self.matrixB15.hidden = YES;
-            self.matrixB16.hidden = YES;
-            
+
             self.result1.hidden = NO;
             self.result2.hidden = NO;
             self.result3.hidden = YES;
@@ -454,23 +424,6 @@
             self.matrixA14.hidden = YES;
             self.matrixA15.hidden = YES;
             self.matrixA16.hidden = YES;
-            
-            self.matrixB1.hidden = NO;
-            self.matrixB2.hidden = NO;
-            self.matrixB3.hidden = NO;
-            self.matrixB4.hidden = YES;
-            self.matrixB5.hidden = YES;
-            self.matrixB6.hidden = YES;
-            self.matrixB7.hidden = YES;
-            self.matrixB8.hidden = YES;
-            self.matrixB9.hidden = YES;
-            self.matrixB10.hidden = YES;
-            self.matrixB11.hidden = YES;
-            self.matrixB12.hidden = YES;
-            self.matrixB13.hidden = YES;
-            self.matrixB14.hidden = YES;
-            self.matrixB15.hidden = YES;
-            self.matrixB16.hidden = YES;
             
             self.result1.hidden = NO;
             self.result2.hidden = NO;
@@ -508,23 +461,6 @@
             self.matrixA15.hidden = YES;
             self.matrixA16.hidden = YES;
             
-            self.matrixB1.hidden = NO;
-            self.matrixB2.hidden = NO;
-            self.matrixB3.hidden = NO;
-            self.matrixB4.hidden = NO;
-            self.matrixB5.hidden = YES;
-            self.matrixB6.hidden = YES;
-            self.matrixB7.hidden = YES;
-            self.matrixB8.hidden = YES;
-            self.matrixB9.hidden = YES;
-            self.matrixB10.hidden = YES;
-            self.matrixB11.hidden = YES;
-            self.matrixB12.hidden = YES;
-            self.matrixB13.hidden = YES;
-            self.matrixB14.hidden = YES;
-            self.matrixB15.hidden = YES;
-            self.matrixB16.hidden = YES;
-            
             self.result1.hidden = NO;
             self.result2.hidden = NO;
             self.result3.hidden = NO;
@@ -561,23 +497,6 @@
             self.matrixA15.hidden = YES;
             self.matrixA16.hidden = YES;
             
-            self.matrixB1.hidden = NO;
-            self.matrixB2.hidden = YES;
-            self.matrixB3.hidden = YES;
-            self.matrixB4.hidden = YES;
-            self.matrixB5.hidden = NO;
-            self.matrixB6.hidden = YES;
-            self.matrixB7.hidden = YES;
-            self.matrixB8.hidden = YES;
-            self.matrixB9.hidden = YES;
-            self.matrixB10.hidden = YES;
-            self.matrixB11.hidden = YES;
-            self.matrixB12.hidden = YES;
-            self.matrixB13.hidden = YES;
-            self.matrixB14.hidden = YES;
-            self.matrixB15.hidden = YES;
-            self.matrixB16.hidden = YES;
-            
             self.result1.hidden = NO;
             self.result2.hidden = YES;
             self.result3.hidden = YES;
@@ -612,23 +531,6 @@
             self.matrixA14.hidden = YES;
             self.matrixA15.hidden = YES;
             self.matrixA16.hidden = YES;
-            
-            self.matrixB1.hidden = NO;
-            self.matrixB2.hidden = NO;
-            self.matrixB3.hidden = YES;
-            self.matrixB4.hidden = YES;
-            self.matrixB5.hidden = NO;
-            self.matrixB6.hidden = NO;
-            self.matrixB7.hidden = YES;
-            self.matrixB8.hidden = YES;
-            self.matrixB9.hidden = YES;
-            self.matrixB10.hidden = YES;
-            self.matrixB11.hidden = YES;
-            self.matrixB12.hidden = YES;
-            self.matrixB13.hidden = YES;
-            self.matrixB14.hidden = YES;
-            self.matrixB15.hidden = YES;
-            self.matrixB16.hidden = YES;
             
             self.result1.hidden = NO;
             self.result2.hidden = NO;
@@ -666,23 +568,6 @@
             self.matrixA15.hidden = YES;
             self.matrixA16.hidden = YES;
             
-            self.matrixB1.hidden = NO;
-            self.matrixB2.hidden = NO;
-            self.matrixB3.hidden = NO;
-            self.matrixB4.hidden = YES;
-            self.matrixB5.hidden = NO;
-            self.matrixB6.hidden = NO;
-            self.matrixB7.hidden = NO;
-            self.matrixB8.hidden = YES;
-            self.matrixB9.hidden = YES;
-            self.matrixB10.hidden = YES;
-            self.matrixB11.hidden = YES;
-            self.matrixB12.hidden = YES;
-            self.matrixB13.hidden = YES;
-            self.matrixB14.hidden = YES;
-            self.matrixB15.hidden = YES;
-            self.matrixB16.hidden = YES;
-            
             self.result1.hidden = NO;
             self.result2.hidden = NO;
             self.result3.hidden = NO;
@@ -719,23 +604,6 @@
             self.matrixA15.hidden = YES;
             self.matrixA16.hidden = YES;
             
-            self.matrixB1.hidden = NO;
-            self.matrixB2.hidden = NO;
-            self.matrixB3.hidden = NO;
-            self.matrixB4.hidden = NO;
-            self.matrixB5.hidden = NO;
-            self.matrixB6.hidden = NO;
-            self.matrixB7.hidden = NO;
-            self.matrixB8.hidden = NO;
-            self.matrixB9.hidden = YES;
-            self.matrixB10.hidden = YES;
-            self.matrixB11.hidden = YES;
-            self.matrixB12.hidden = YES;
-            self.matrixB13.hidden = YES;
-            self.matrixB14.hidden = YES;
-            self.matrixB15.hidden = YES;
-            self.matrixB16.hidden = YES;
-            
             self.result1.hidden = NO;
             self.result2.hidden = NO;
             self.result3.hidden = NO;
@@ -770,24 +638,7 @@
             self.matrixA14.hidden = YES;
             self.matrixA15.hidden = YES;
             self.matrixA16.hidden = YES;
-            
-            self.matrixB1.hidden = NO;
-            self.matrixB2.hidden = YES;
-            self.matrixB3.hidden = YES;
-            self.matrixB4.hidden = YES;
-            self.matrixB5.hidden = NO;
-            self.matrixB6.hidden = YES;
-            self.matrixB7.hidden = YES;
-            self.matrixB8.hidden = YES;
-            self.matrixB9.hidden = NO;
-            self.matrixB10.hidden = YES;
-            self.matrixB11.hidden = YES;
-            self.matrixB12.hidden = YES;
-            self.matrixB13.hidden = YES;
-            self.matrixB14.hidden = YES;
-            self.matrixB15.hidden = YES;
-            self.matrixB16.hidden = YES;
-            
+
             self.result1.hidden = NO;
             self.result2.hidden = YES;
             self.result3.hidden = YES;
@@ -823,23 +674,6 @@
             self.matrixA14.hidden = YES;
             self.matrixA15.hidden = YES;
             self.matrixA16.hidden = YES;
-            
-            self.matrixB1.hidden = NO;
-            self.matrixB2.hidden = NO;
-            self.matrixB3.hidden = YES;
-            self.matrixB4.hidden = YES;
-            self.matrixB5.hidden = NO;
-            self.matrixB6.hidden = NO;
-            self.matrixB7.hidden = YES;
-            self.matrixB8.hidden = YES;
-            self.matrixB9.hidden = NO;
-            self.matrixB10.hidden = NO;
-            self.matrixB11.hidden = YES;
-            self.matrixB12.hidden = YES;
-            self.matrixB13.hidden = YES;
-            self.matrixB14.hidden = YES;
-            self.matrixB15.hidden = YES;
-            self.matrixB16.hidden = YES;
             
             self.result1.hidden = NO;
             self.result2.hidden = NO;
@@ -877,23 +711,6 @@
             self.matrixA15.hidden = YES;
             self.matrixA16.hidden = YES;
             
-            self.matrixB1.hidden = NO;
-            self.matrixB2.hidden = NO;
-            self.matrixB3.hidden = NO;
-            self.matrixB4.hidden = YES;
-            self.matrixB5.hidden = NO;
-            self.matrixB6.hidden = NO;
-            self.matrixB7.hidden = NO;
-            self.matrixB8.hidden = YES;
-            self.matrixB9.hidden = NO;
-            self.matrixB10.hidden = NO;
-            self.matrixB11.hidden = NO;
-            self.matrixB12.hidden = YES;
-            self.matrixB13.hidden = YES;
-            self.matrixB14.hidden = YES;
-            self.matrixB15.hidden = YES;
-            self.matrixB16.hidden = YES;
-            
             self.result1.hidden = NO;
             self.result2.hidden = NO;
             self.result3.hidden = NO;
@@ -929,23 +746,6 @@
             self.matrixA14.hidden = YES;
             self.matrixA15.hidden = YES;
             self.matrixA16.hidden = YES;
-            
-            self.matrixB1.hidden = NO;
-            self.matrixB2.hidden = NO;
-            self.matrixB3.hidden = NO;
-            self.matrixB4.hidden = NO;
-            self.matrixB5.hidden = NO;
-            self.matrixB6.hidden = NO;
-            self.matrixB7.hidden = NO;
-            self.matrixB8.hidden = NO;
-            self.matrixB9.hidden = NO;
-            self.matrixB10.hidden = NO;
-            self.matrixB11.hidden = NO;
-            self.matrixB12.hidden = NO;
-            self.matrixB13.hidden = YES;
-            self.matrixB14.hidden = YES;
-            self.matrixB15.hidden = YES;
-            self.matrixB16.hidden = YES;
             
             self.result1.hidden = NO;
             self.result2.hidden = NO;
@@ -983,23 +783,6 @@
             self.matrixA15.hidden = YES;
             self.matrixA16.hidden = YES;
             
-            self.matrixB1.hidden = NO;
-            self.matrixB2.hidden = YES;
-            self.matrixB3.hidden = YES;
-            self.matrixB4.hidden = YES;
-            self.matrixB5.hidden = NO;
-            self.matrixB6.hidden = YES;
-            self.matrixB7.hidden = YES;
-            self.matrixB8.hidden = YES;
-            self.matrixB9.hidden = NO;
-            self.matrixB10.hidden = YES;
-            self.matrixB11.hidden = YES;
-            self.matrixB12.hidden = YES;
-            self.matrixB13.hidden = NO;
-            self.matrixB14.hidden = YES;
-            self.matrixB15.hidden = YES;
-            self.matrixB16.hidden = YES;
-            
             self.result1.hidden = NO;
             self.result2.hidden = YES;
             self.result3.hidden = YES;
@@ -1036,23 +819,6 @@
             self.matrixA15.hidden = YES;
             self.matrixA16.hidden = YES;
             
-            self.matrixB1.hidden = NO;
-            self.matrixB2.hidden = NO;
-            self.matrixB3.hidden = YES;
-            self.matrixB4.hidden = YES;
-            self.matrixB5.hidden = NO;
-            self.matrixB6.hidden = NO;
-            self.matrixB7.hidden = YES;
-            self.matrixB8.hidden = YES;
-            self.matrixB9.hidden = NO;
-            self.matrixB10.hidden = NO;
-            self.matrixB11.hidden = YES;
-            self.matrixB12.hidden = YES;
-            self.matrixB13.hidden = NO;
-            self.matrixB14.hidden = NO;
-            self.matrixB15.hidden = YES;
-            self.matrixB16.hidden = YES;
-            
             self.result1.hidden = NO;
             self.result2.hidden = NO;
             self.result3.hidden = YES;
@@ -1088,24 +854,7 @@
             self.matrixA14.hidden = NO;
             self.matrixA15.hidden = NO;
             self.matrixA16.hidden = YES;
-            
-            self.matrixB1.hidden = NO;
-            self.matrixB2.hidden = NO;
-            self.matrixB3.hidden = NO;
-            self.matrixB4.hidden = YES;
-            self.matrixB5.hidden = NO;
-            self.matrixB6.hidden = NO;
-            self.matrixB7.hidden = NO;
-            self.matrixB8.hidden = YES;
-            self.matrixB9.hidden = NO;
-            self.matrixB10.hidden = NO;
-            self.matrixB11.hidden = NO;
-            self.matrixB12.hidden = YES;
-            self.matrixB13.hidden = NO;
-            self.matrixB14.hidden = NO;
-            self.matrixB15.hidden = NO;
-            self.matrixB16.hidden = YES;
-            
+       
             self.result1.hidden = NO;
             self.result2.hidden = NO;
             self.result3.hidden = NO;
@@ -1141,23 +890,6 @@
             self.matrixA14.hidden = NO;
             self.matrixA15.hidden = NO;
             self.matrixA16.hidden = NO;
-            
-            self.matrixB1.hidden = NO;
-            self.matrixB2.hidden = NO;
-            self.matrixB3.hidden = NO;
-            self.matrixB4.hidden = NO;
-            self.matrixB5.hidden = NO;
-            self.matrixB6.hidden = NO;
-            self.matrixB7.hidden = NO;
-            self.matrixB8.hidden = NO;
-            self.matrixB9.hidden = NO;
-            self.matrixB10.hidden = NO;
-            self.matrixB11.hidden = NO;
-            self.matrixB12.hidden = NO;
-            self.matrixB13.hidden = NO;
-            self.matrixB14.hidden = NO;
-            self.matrixB15.hidden = NO;
-            self.matrixB16.hidden = NO;
             
             self.result1.hidden = NO;
             self.result2.hidden = NO;
