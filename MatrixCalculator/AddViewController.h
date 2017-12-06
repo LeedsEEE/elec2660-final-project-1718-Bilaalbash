@@ -73,23 +73,5 @@
 @property (weak, nonatomic) IBOutlet UITextField *result15;
 @property (weak, nonatomic) IBOutlet UITextField *result16;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @end
 

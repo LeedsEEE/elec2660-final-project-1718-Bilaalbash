@@ -20,7 +20,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     self.firstPickerAdd.delegate = self;
     self.firstPickerAdd.dataSource = self;
-    
+
     //same for second
     self.secondPickerAdd.delegate = self;
     self.secondPickerAdd.dataSource = self;
@@ -46,6 +46,61 @@
     self.result16.hidden = YES;
     
     matrixSize = @[@"1x1",@"1x2",@"1x3",@"1x4",@"2x1",@"2x2",@"2x3",@"2x4",@"3x1",@"3x2",@"3x3",@"3x4",@"4x1",@"4x2",@"4x3",@"4x4"];
+    
+#pragma mark - Making Keyboard a Numberpad
+
+    _matrixA1.keyboardType = UIKeyboardTypeNumberPad;
+    _matrixA2.keyboardType = UIKeyboardTypeNumberPad;
+    _matrixA3.keyboardType = UIKeyboardTypeNumberPad;
+    _matrixA4.keyboardType = UIKeyboardTypeNumberPad;
+    _matrixA5.keyboardType = UIKeyboardTypeNumberPad;
+    _matrixA6.keyboardType = UIKeyboardTypeNumberPad;
+    _matrixA7.keyboardType = UIKeyboardTypeNumberPad;
+    _matrixA8.keyboardType = UIKeyboardTypeNumberPad;
+    _matrixA9.keyboardType = UIKeyboardTypeNumberPad;
+    _matrixA10.keyboardType = UIKeyboardTypeNumberPad;
+    _matrixA11.keyboardType = UIKeyboardTypeNumberPad;
+    _matrixA12.keyboardType = UIKeyboardTypeNumberPad;
+    _matrixA13.keyboardType = UIKeyboardTypeNumberPad;
+    _matrixA14.keyboardType = UIKeyboardTypeNumberPad;
+    _matrixA15.keyboardType = UIKeyboardTypeNumberPad;
+    _matrixA16.keyboardType = UIKeyboardTypeNumberPad;
+    
+    _matrixB1.keyboardType = UIKeyboardTypeNumberPad;
+    _matrixB2.keyboardType = UIKeyboardTypeNumberPad;
+    _matrixB3.keyboardType = UIKeyboardTypeNumberPad;
+    _matrixB4.keyboardType = UIKeyboardTypeNumberPad;
+    _matrixB5.keyboardType = UIKeyboardTypeNumberPad;
+    _matrixB6.keyboardType = UIKeyboardTypeNumberPad;
+    _matrixB7.keyboardType = UIKeyboardTypeNumberPad;
+    _matrixB8.keyboardType = UIKeyboardTypeNumberPad;
+    _matrixB9.keyboardType = UIKeyboardTypeNumberPad;
+    _matrixB10.keyboardType = UIKeyboardTypeNumberPad;
+    _matrixB11.keyboardType = UIKeyboardTypeNumberPad;
+    _matrixB12.keyboardType = UIKeyboardTypeNumberPad;
+    _matrixB13.keyboardType = UIKeyboardTypeNumberPad;
+    _matrixB14.keyboardType = UIKeyboardTypeNumberPad;
+    _matrixB15.keyboardType = UIKeyboardTypeNumberPad;
+    _matrixB16.keyboardType = UIKeyboardTypeNumberPad;
+    
+    _result1.keyboardType = UIKeyboardTypeNumberPad;
+    _result2.keyboardType = UIKeyboardTypeNumberPad;
+    _result3.keyboardType = UIKeyboardTypeNumberPad;
+    _result4.keyboardType = UIKeyboardTypeNumberPad;
+    _result5.keyboardType = UIKeyboardTypeNumberPad;
+    _result6.keyboardType = UIKeyboardTypeNumberPad;
+    _result7.keyboardType = UIKeyboardTypeNumberPad;
+    _result8.keyboardType = UIKeyboardTypeNumberPad;
+    _result9.keyboardType = UIKeyboardTypeNumberPad;
+    _result10.keyboardType = UIKeyboardTypeNumberPad;
+    _result11.keyboardType = UIKeyboardTypeNumberPad;
+    _result12.keyboardType = UIKeyboardTypeNumberPad;
+    _result13.keyboardType = UIKeyboardTypeNumberPad;
+    _result14.keyboardType = UIKeyboardTypeNumberPad;
+    _result15.keyboardType = UIKeyboardTypeNumberPad;
+    _result16.keyboardType = UIKeyboardTypeNumberPad;
+
+    
 }
 
 -(NSInteger) numberOfComponentsInPickerView:(UIPickerView *)pickerView  {
@@ -1003,9 +1058,13 @@
     
     int resultP = [_matrixA16.text intValue] + [_matrixB16.text intValue];
     _result16.text = [NSString stringWithFormat:@"%d", resultP];
-    
-
 }
+#pragma mark - Text Field Delegate Methods
 
+- (BOOL)textFieldShouldReturn:(UITextField *)textField{
+    [_matrixA1 resignFirstResponder];
+    
+    return YES;
+}
 
 @end
