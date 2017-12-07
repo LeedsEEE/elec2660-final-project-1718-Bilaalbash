@@ -8,7 +8,8 @@
 
 #import "AddViewController.h"
 
-@interface AddViewController (){
+@interface AddViewController () <UITextFieldDelegate>
+{
     NSArray *matrixSize;
 }
 @end
@@ -17,16 +18,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
     self.firstPickerAdd.delegate = self;
     self.firstPickerAdd.dataSource = self;
 
-    //same for second
     self.secondPickerAdd.delegate = self;
     self.secondPickerAdd.dataSource = self;
    
-    self.secondPickerAdd.hidden = YES;
-    self.myButton.hidden = YES;
+    self.secondPickerAdd.hidden = YES; //This hides the second picker
+    self.myButton.hidden = YES; //Hide Button
     
     self.result1.hidden = YES;
     self.result2.hidden = YES;
@@ -45,12 +45,32 @@
     self.result15.hidden = YES;
     self.result16.hidden = YES;
     
-    matrixSize = @[@"1x1",@"1x2",@"1x3",@"1x4",@"2x1",@"2x2",@"2x3",@"2x4",@"3x1",@"3x2",@"3x3",@"3x4",@"4x1",@"4x2",@"4x3",@"4x4"];
+#pragma mark - Disabling the Result textfield
+    self.result1.enabled = NO;
+    self.result2.enabled = NO;
+    self.result3.enabled = NO;
+    self.result4.enabled = NO;
+    self.result5.enabled = NO;
+    self.result6.enabled = NO;
+    self.result7.enabled = NO;
+    self.result8.enabled = NO;
+    self.result9.enabled = NO;
+    self.result10.enabled = NO;
+    self.result11.enabled = NO;
+    self.result12.enabled = NO;
+    self.result13.enabled = NO;
+    self.result14.enabled = NO;
+    self.result15.enabled = NO;
+    self.result16.enabled = NO;
+
+
+    
+matrixSize = @[@"1x1",@"1x2",@"1x3",@"1x4",@"2x1",@"2x2",@"2x3",@"2x4",@"3x1",@"3x2",@"3x3",@"3x4",@"4x1",@"4x2",@"4x3",@"4x4"];
     
 #pragma mark - Making Keyboard a Numberpad
 
-    _matrixA1.keyboardType = UIKeyboardTypeNumberPad;
-    _matrixA2.keyboardType = UIKeyboardTypeNumberPad;
+    //_matrixA1.keyboardType = UIKeyboardTypeNumberPad;
+    //_matrixA2.keyboardType = UIKeyboardTypeNumberPad;
     _matrixA3.keyboardType = UIKeyboardTypeNumberPad;
     _matrixA4.keyboardType = UIKeyboardTypeNumberPad;
     _matrixA5.keyboardType = UIKeyboardTypeNumberPad;
@@ -147,7 +167,8 @@
     self.secondPickerAdd.hidden = NO;
     [self.secondPickerAdd reloadAllComponents];
     
-    //hide textfields using picker
+
+#pragma mark - Hiding the textfields using the first picker
     
     if (pickerView == self.firstPickerAdd) {
         NSInteger row = [self.firstPickerAdd selectedRowInComponent:0];

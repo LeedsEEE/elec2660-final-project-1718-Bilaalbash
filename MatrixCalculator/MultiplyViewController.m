@@ -8,7 +8,8 @@
 
 #import "MultiplyViewController.h"
 
-@interface MultiplyViewController (){
+@interface MultiplyViewController () <UITextFieldDelegate>
+{
     NSArray *matrixSize;
     NSArray *row1;
     NSArray *row2;
