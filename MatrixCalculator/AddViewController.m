@@ -151,6 +151,7 @@ matrixSize = @[@"1x1",@"1x2",@"1x3",@"1x4",@"2x1",@"2x2",@"2x3",@"2x4",@"3x1",@"
     
     if(pickerView == self.firstPickerAdd) {
         rows = matrixSize.count;
+
     }
     else if (pickerView == self.secondPickerAdd) {
         rows = 1;
@@ -164,6 +165,7 @@ matrixSize = @[@"1x1",@"1x2",@"1x3",@"1x4",@"2x1",@"2x2",@"2x3",@"2x4",@"3x1",@"
     
     if (pickerView == self.firstPickerAdd) {
         title = matrixSize[row];
+        
     }
     else if (pickerView == self.secondPickerAdd){
         
@@ -234,7 +236,9 @@ matrixSize = @[@"1x1",@"1x2",@"1x3",@"1x4",@"2x1",@"2x2",@"2x3",@"2x4",@"3x1",@"
             self.result14.hidden = YES;
             self.result15.hidden = YES;
             self.result16.hidden = YES;
-            
+           
+            NSLog(@"sets matrix 1x1");
+
         }
         else if (row == 1) {
             self.matrixA1.hidden = NO;
@@ -287,6 +291,9 @@ matrixSize = @[@"1x1",@"1x2",@"1x3",@"1x4",@"2x1",@"2x2",@"2x3",@"2x4",@"3x1",@"
             self.result14.hidden = YES;
             self.result15.hidden = YES;
             self.result16.hidden = YES;
+            
+            NSLog(@"sets matrix 1x2");
+
         }
         else if (row == 2) {
             self.matrixA1.hidden = NO;
@@ -339,6 +346,9 @@ matrixSize = @[@"1x1",@"1x2",@"1x3",@"1x4",@"2x1",@"2x2",@"2x3",@"2x4",@"3x1",@"
             self.result14.hidden = YES;
             self.result15.hidden = YES;
             self.result16.hidden = YES;
+            
+            NSLog(@"sets matrix 1x3");
+
             
         }
         else if (row == 3) {
@@ -393,6 +403,9 @@ matrixSize = @[@"1x1",@"1x2",@"1x3",@"1x4",@"2x1",@"2x2",@"2x3",@"2x4",@"3x1",@"
             self.result15.hidden = YES;
             self.result16.hidden = YES;
             
+            NSLog(@"sets matrix 1x4");
+
+            
         }
         else if (row == 4) {
             self.matrixA1.hidden = NO;
@@ -445,6 +458,9 @@ matrixSize = @[@"1x1",@"1x2",@"1x3",@"1x4",@"2x1",@"2x2",@"2x3",@"2x4",@"3x1",@"
             self.result14.hidden = YES;
             self.result15.hidden = YES;
             self.result16.hidden = YES;
+            
+            NSLog(@"sets matrix 2x1");
+
         }
         else if (row == 5) {
             self.matrixA1.hidden = NO;
@@ -497,6 +513,9 @@ matrixSize = @[@"1x1",@"1x2",@"1x3",@"1x4",@"2x1",@"2x2",@"2x3",@"2x4",@"3x1",@"
             self.result14.hidden = YES;
             self.result15.hidden = YES;
             self.result16.hidden = YES;
+            
+            NSLog(@"sets matrix 2x2");
+
             
         }
         else if (row == 6) {
@@ -551,6 +570,9 @@ matrixSize = @[@"1x1",@"1x2",@"1x3",@"1x4",@"2x1",@"2x2",@"2x3",@"2x4",@"3x1",@"
             self.result15.hidden = YES;
             self.result16.hidden = YES;
             
+            NSLog(@"sets matrix 2x3");
+
+            
         }
         else if (row == 7) {
             self.matrixA1.hidden = NO;
@@ -603,6 +625,9 @@ matrixSize = @[@"1x1",@"1x2",@"1x3",@"1x4",@"2x1",@"2x2",@"2x3",@"2x4",@"3x1",@"
             self.result14.hidden = YES;
             self.result15.hidden = YES;
             self.result16.hidden = YES;
+            
+            NSLog(@"sets matrix 2x4");
+
         }
         else if (row == 8) {
             self.matrixA1.hidden = NO;
@@ -655,6 +680,9 @@ matrixSize = @[@"1x1",@"1x2",@"1x3",@"1x4",@"2x1",@"2x2",@"2x3",@"2x4",@"3x1",@"
             self.result14.hidden = YES;
             self.result15.hidden = YES;
             self.result16.hidden = YES;
+            
+            NSLog(@"sets matrix 3x1");
+
             
         }
         else if (row == 9) {
@@ -709,6 +737,9 @@ matrixSize = @[@"1x1",@"1x2",@"1x3",@"1x4",@"2x1",@"2x2",@"2x3",@"2x4",@"3x1",@"
             self.result15.hidden = YES;
             self.result16.hidden = YES;
             
+            NSLog(@"sets matrix 3x2");
+
+            
         }
         else if (row == 10) {
             self.matrixA1.hidden = NO;
@@ -761,6 +792,8 @@ matrixSize = @[@"1x1",@"1x2",@"1x3",@"1x4",@"2x1",@"2x2",@"2x3",@"2x4",@"3x1",@"
             self.result14.hidden = YES;
             self.result15.hidden = YES;
             self.result16.hidden = YES;
+            
+            NSLog(@"sets matrix 3x3");
             
     }
         else if (row == 11) {
@@ -815,6 +848,8 @@ matrixSize = @[@"1x1",@"1x2",@"1x3",@"1x4",@"2x1",@"2x2",@"2x3",@"2x4",@"3x1",@"
             self.result15.hidden = YES;
             self.result16.hidden = YES;
             
+            NSLog(@"sets matrix 3x4");
+            
         }
         else if (row == 12) {
             self.matrixA1.hidden = NO;
@@ -867,6 +902,8 @@ matrixSize = @[@"1x1",@"1x2",@"1x3",@"1x4",@"2x1",@"2x2",@"2x3",@"2x4",@"3x1",@"
             self.result14.hidden = YES;
             self.result15.hidden = YES;
             self.result16.hidden = YES;
+        
+            NSLog(@"sets matrix 4x1");
             
         }
         else if (row == 13) {
@@ -921,6 +958,8 @@ matrixSize = @[@"1x1",@"1x2",@"1x3",@"1x4",@"2x1",@"2x2",@"2x3",@"2x4",@"3x1",@"
             self.result15.hidden = YES;
             self.result16.hidden = YES;
             
+            NSLog(@"sets matrix 4x2");
+            
         }
         else if (row == 14) {
             self.matrixA1.hidden = NO;
@@ -974,6 +1013,8 @@ matrixSize = @[@"1x1",@"1x2",@"1x3",@"1x4",@"2x1",@"2x2",@"2x3",@"2x4",@"3x1",@"
             self.result15.hidden = NO;
             self.result16.hidden = YES;
             
+            NSLog(@"sets matrix 4x3");
+
         }
         else if (row == 15) {
             self.matrixA1.hidden = NO;
@@ -1027,6 +1068,8 @@ matrixSize = @[@"1x1",@"1x2",@"1x3",@"1x4",@"2x1",@"2x2",@"2x3",@"2x4",@"3x1",@"
             self.result15.hidden = NO;
             self.result16.hidden = NO;
             
+            NSLog(@"sets matrix 4x4");
+
         }
     }
 }
@@ -1091,6 +1134,8 @@ matrixSize = @[@"1x1",@"1x2",@"1x3",@"1x4",@"2x1",@"2x2",@"2x3",@"2x4",@"3x1",@"
     int resultP = [_matrixA16.text intValue] + [_matrixB16.text intValue];
     _result16.text = [NSString stringWithFormat:@"%d", resultP];
     
+    NSLog(@"Add Button Pressed, results displayed");
+
 }
 #pragma mark - Text Field Delegate Methods
 

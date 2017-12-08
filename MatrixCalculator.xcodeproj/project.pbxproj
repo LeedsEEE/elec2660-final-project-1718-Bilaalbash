@@ -17,9 +17,7 @@
 		280CC2831FC454690066D6EC /* MatrixCalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 280CC2821FC454690066D6EC /* MatrixCalculatorTests.m */; };
 		280CC28E1FC454690066D6EC /* MatrixCalculatorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 280CC28D1FC454690066D6EC /* MatrixCalculatorUITests.m */; };
 		2860F1971FC461EC00E1F092 /* MultiplyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2860F1961FC461EC00E1F092 /* MultiplyViewController.m */; };
-		28C29CEE1FDAD2E50068AB8C /* Tab1.png in Resources */ = {isa = PBXBuildFile; fileRef = 28C29CED1FDAD2E40068AB8C /* Tab1.png */; };
-		28C29CF01FDAD2F20068AB8C /* Tab3.png in Resources */ = {isa = PBXBuildFile; fileRef = 28C29CEF1FDAD2F10068AB8C /* Tab3.png */; };
-		28C29CF41FDAD3D20068AB8C /* Tab2.png in Resources */ = {isa = PBXBuildFile; fileRef = 28C29CF31FDAD3D10068AB8C /* Tab2.png */; };
+		28C29CF81FDAD94D0068AB8C /* App icons in Resources */ = {isa = PBXBuildFile; fileRef = 28C29CF71FDAD94D0068AB8C /* App icons */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,9 +58,7 @@
 		280CC28F1FC454690066D6EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2860F1951FC461EC00E1F092 /* MultiplyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultiplyViewController.h; sourceTree = "<group>"; };
 		2860F1961FC461EC00E1F092 /* MultiplyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultiplyViewController.m; sourceTree = "<group>"; };
-		28C29CED1FDAD2E40068AB8C /* Tab1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tab1.png; sourceTree = "<group>"; };
-		28C29CEF1FDAD2F10068AB8C /* Tab3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tab3.png; sourceTree = "<group>"; };
-		28C29CF31FDAD3D10068AB8C /* Tab2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tab2.png; sourceTree = "<group>"; };
+		28C29CF71FDAD94D0068AB8C /* App icons */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "App icons"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,9 +122,7 @@
 				280CC2741FC454690066D6EC /* LaunchScreen.storyboard */,
 				280CC2771FC454690066D6EC /* Info.plist */,
 				280CC2781FC454690066D6EC /* main.m */,
-				28C29CED1FDAD2E40068AB8C /* Tab1.png */,
-				28C29CF31FDAD3D10068AB8C /* Tab2.png */,
-				28C29CEF1FDAD2F10068AB8C /* Tab3.png */,
+				28C29CF71FDAD94D0068AB8C /* App icons */,
 			);
 			path = MatrixCalculator;
 			sourceTree = "<group>";
@@ -257,12 +251,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28C29CF41FDAD3D20068AB8C /* Tab2.png in Resources */,
 				280CC2761FC454690066D6EC /* LaunchScreen.storyboard in Resources */,
 				280CC2731FC454690066D6EC /* Assets.xcassets in Resources */,
-				28C29CF01FDAD2F20068AB8C /* Tab3.png in Resources */,
 				280CC2711FC454690066D6EC /* Main.storyboard in Resources */,
-				28C29CEE1FDAD2E50068AB8C /* Tab1.png in Resources */,
+				28C29CF81FDAD94D0068AB8C /* App icons in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

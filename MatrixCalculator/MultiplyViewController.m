@@ -488,6 +488,8 @@
             self.result15.hidden = YES;
             self.result6.hidden = YES;
             
+            NSLog(@"sets matrix A 1x1 and sets matrix B 1x1");
+            
         }
        else if ((firstPickerRow == 0) && (row  == 1)) {
             self.matrixB1.hidden = NO;
@@ -540,7 +542,10 @@
             self.result14.hidden = YES;
             self.result15.hidden = YES;
             self.result16.hidden = YES;
-        }
+           
+           NSLog(@"sets matrix A 1x1 and sets matrix B 1x2");
+
+       }
        else if ((firstPickerRow == 0) && (row  == 2)) {
            self.matrixB1.hidden = NO;
            self.matrixB2.hidden = NO;
@@ -592,6 +597,9 @@
            self.result14.hidden = YES;
            self.result15.hidden = YES;
            self.result16.hidden = YES;
+           
+           NSLog(@"sets matrix A 1x1 and sets matrix B 1x3");
+
        }
        else if ((firstPickerRow == 0) && (row  == 3)) {
            self.matrixB1.hidden = NO;
@@ -644,6 +652,9 @@
            self.result14.hidden = YES;
            self.result15.hidden = YES;
            self.result16.hidden = YES;
+           
+           NSLog(@"sets matrix A 1x1 and sets matrix B 1x4");
+           
        }
        else if ((firstPickerRow == 1) && (row  == 0)) {
            self.matrixB1.hidden = NO;
@@ -696,6 +707,9 @@
            self.result14.hidden = YES;
            self.result15.hidden = YES;
            self.result16.hidden = YES;
+           
+           NSLog(@"sets matrix A 1x2 and sets matrix B 2x1");
+
        }
        else if ((firstPickerRow == 1) && (row  == 1)) {
            self.matrixB1.hidden = NO;
@@ -748,6 +762,9 @@
            self.result14.hidden = YES;
            self.result15.hidden = YES;
            self.result16.hidden = YES;
+           
+           NSLog(@"sets matrix A 1x2 and sets matrix B 2x2");
+
        }
        else if ((firstPickerRow == 1) && (row  == 2)) {
            self.matrixB1.hidden = NO;
@@ -800,6 +817,9 @@
            self.result14.hidden = YES;
            self.result15.hidden = YES;
            self.result16.hidden = YES;
+           
+           NSLog(@"sets matrix A 1x2 and sets matrix B 2x3");
+
        }
        else if ((firstPickerRow == 1) && (row  == 3)) {
            self.matrixB1.hidden = NO;
@@ -852,6 +872,9 @@
            self.result14.hidden = YES;
            self.result15.hidden = YES;
            self.result16.hidden = YES;
+           
+           NSLog(@"sets matrix A 1x2 and sets matrix B 2x4");
+
        }
        else if ((firstPickerRow == 2) && (row  == 0)) {
            self.matrixB1.hidden = NO;
@@ -904,6 +927,9 @@
            self.result14.hidden = YES;
            self.result15.hidden = YES;
            self.result16.hidden = YES;
+           
+           NSLog(@"sets matrix A 1x3 and sets matrix B 3x1");
+
        }
        else if ((firstPickerRow == 2) && (row  == 1)) {
            self.matrixB1.hidden = NO;
@@ -956,6 +982,9 @@
            self.result14.hidden = YES;
            self.result15.hidden = YES;
            self.result16.hidden = YES;
+           
+           NSLog(@"sets matrix A 1x3 and sets matrix B 3x2");
+
        }
        else if ((firstPickerRow == 2) && (row  == 2)) {
            self.matrixB1.hidden = NO;
@@ -1008,6 +1037,9 @@
            self.result14.hidden = YES;
            self.result15.hidden = YES;
            self.result16.hidden = YES;
+           
+           NSLog(@"sets matrix A 1x3 and sets matrix B 3x3");
+
        }
        else if ((firstPickerRow == 2) && (row  == 3)) {
            self.matrixB1.hidden = NO;
@@ -1060,6 +1092,9 @@
            self.result14.hidden = YES;
            self.result15.hidden = YES;
            self.result16.hidden = YES;
+           
+           NSLog(@"sets matrix A 1x3 and sets matrix B 3x4");
+
        }
        else if ((firstPickerRow == 3) && (row  == 0)) {
            self.matrixB1.hidden = NO;
@@ -1112,6 +1147,9 @@
            self.result14.hidden = YES;
            self.result15.hidden = YES;
            self.result16.hidden = YES;
+           
+           NSLog(@"sets matrix A 1x4 and sets matrix B 4x1");
+
        }
        else if ((firstPickerRow == 3) && (row  == 1)) {
            self.matrixB1.hidden = NO;
@@ -1164,6 +1202,9 @@
            self.result14.hidden = YES;
            self.result15.hidden = YES;
            self.result16.hidden = YES;
+           
+           NSLog(@"sets matrix A 1x4 and sets matrix B 4x2");
+
        }
        else if ((firstPickerRow == 3) && (row  == 2)) {
            self.matrixB1.hidden = NO;
@@ -1216,6 +1257,9 @@
            self.result14.hidden = YES;
            self.result15.hidden = YES;
            self.result16.hidden = YES;
+           
+           NSLog(@"sets matrix A 1x4 and sets matrix B 4x3");
+
        }
        else if ((firstPickerRow == 3) && (row  == 3)) {
            self.matrixB1.hidden = NO;
@@ -1268,6 +1312,9 @@
            self.result14.hidden = YES;
            self.result15.hidden = YES;
            self.result16.hidden = YES;
+           
+           NSLog(@"sets matrix A 1x4 and sets matrix B 4x4");
+
        }
         else if ((firstPickerRow == 4) && (row  == 0)) {
             self.matrixB1.hidden = NO;
@@ -1321,6 +1368,8 @@
             self.result15.hidden = YES;
             self.result6.hidden = YES;
             
+            NSLog(@"sets matrix A 2x1 and sets matrix B 1x1");
+            
         }
         else if ((firstPickerRow == 4) && (row  == 1)) {
             self.matrixB1.hidden = NO;
@@ -1373,6 +1422,9 @@
             self.result14.hidden = YES;
             self.result15.hidden = YES;
             self.result16.hidden = YES;
+            
+            NSLog(@"sets matrix A 2x1 and sets matrix B 1x2");
+
         }
         else if ((firstPickerRow == 4) && (row  == 2)) {
             self.matrixB1.hidden = NO;
@@ -1425,6 +1477,9 @@
             self.result14.hidden = YES;
             self.result15.hidden = YES;
             self.result16.hidden = YES;
+            
+            NSLog(@"sets matrix A 2x1 and sets matrix B 1x3");
+
         }
         else if ((firstPickerRow == 4) && (row  == 3)) {
             self.matrixB1.hidden = NO;
@@ -1477,6 +1532,9 @@
             self.result14.hidden = YES;
             self.result15.hidden = YES;
             self.result16.hidden = YES;
+            
+            NSLog(@"sets matrix A 2x1 and sets matrix B 1x4");
+
         }
         else if ((firstPickerRow == 5) && (row  == 0)) {
             self.matrixB1.hidden = NO;
@@ -1529,6 +1587,9 @@
             self.result14.hidden = YES;
             self.result15.hidden = YES;
             self.result16.hidden = YES;
+            
+            NSLog(@"sets matrix A 2x2 and sets matrix B 2x1");
+
         }
         else if ((firstPickerRow == 5) && (row  == 1)) {
             self.matrixB1.hidden = NO;
@@ -1581,6 +1642,9 @@
             self.result14.hidden = YES;
             self.result15.hidden = YES;
             self.result16.hidden = YES;
+            
+            NSLog(@"sets matrix A 2x2 and sets matrix B 2x2");
+
         }
         else if ((firstPickerRow == 5) && (row  == 2)) {
             self.matrixB1.hidden = NO;
@@ -1633,6 +1697,9 @@
             self.result14.hidden = YES;
             self.result15.hidden = YES;
             self.result16.hidden = YES;
+            
+            NSLog(@"sets matrix A 2x2 and sets matrix B 2x3");
+
         }
         else if ((firstPickerRow == 5) && (row  == 3)) {
             self.matrixB1.hidden = NO;
@@ -1685,6 +1752,9 @@
             self.result14.hidden = YES;
             self.result15.hidden = YES;
             self.result16.hidden = YES;
+            
+            NSLog(@"sets matrix A 2x2 and sets matrix B 2x4");
+
         }
         else if ((firstPickerRow == 6) && (row  == 0)) {
             self.matrixB1.hidden = NO;
@@ -1737,6 +1807,9 @@
             self.result14.hidden = YES;
             self.result15.hidden = YES;
             self.result16.hidden = YES;
+            
+            NSLog(@"sets matrix A 2x3 and sets matrix B 3x1");
+
         }
         else if ((firstPickerRow == 6) && (row  == 1)) {
             self.matrixB1.hidden = NO;
@@ -1789,6 +1862,9 @@
             self.result14.hidden = YES;
             self.result15.hidden = YES;
             self.result16.hidden = YES;
+            
+            NSLog(@"sets matrix A 2x3 and sets matrix B 3x2");
+
         }
         else if ((firstPickerRow == 6) && (row  == 2)) {
             self.matrixB1.hidden = NO;
@@ -1841,6 +1917,9 @@
             self.result14.hidden = YES;
             self.result15.hidden = YES;
             self.result16.hidden = YES;
+            
+            NSLog(@"sets matrix A 2x3 and sets matrix B 3x3");
+
         }
         else if ((firstPickerRow == 6) && (row  == 3)) {
             self.matrixB1.hidden = NO;
@@ -1893,6 +1972,9 @@
             self.result14.hidden = YES;
             self.result15.hidden = YES;
             self.result16.hidden = YES;
+            
+            NSLog(@"sets matrix A 2x3 and sets matrix B 3x4");
+
         }
         else if ((firstPickerRow == 7) && (row  == 0)) {
             self.matrixB1.hidden = NO;
@@ -1945,6 +2027,9 @@
             self.result14.hidden = YES;
             self.result15.hidden = YES;
             self.result16.hidden = YES;
+            
+            NSLog(@"sets matrix A 2x4 and sets matrix B 4x1");
+
         }
         else if ((firstPickerRow == 7) && (row  == 1)) {
             self.matrixB1.hidden = NO;
@@ -1997,6 +2082,9 @@
             self.result14.hidden = YES;
             self.result15.hidden = YES;
             self.result16.hidden = YES;
+            
+            NSLog(@"sets matrix A 2x4 and sets matrix B 4x2");
+
         }
         else if ((firstPickerRow == 7) && (row  == 2)) {
             self.matrixB1.hidden = NO;
@@ -2049,6 +2137,9 @@
             self.result14.hidden = YES;
             self.result15.hidden = YES;
             self.result16.hidden = YES;
+            
+            NSLog(@"sets matrix A 2x4 and sets matrix B 4x3");
+
         }
         else if ((firstPickerRow == 7) && (row  == 3)) {
             self.matrixB1.hidden = NO;
@@ -2101,6 +2192,9 @@
             self.result14.hidden = YES;
             self.result15.hidden = YES;
             self.result16.hidden = YES;
+            
+            NSLog(@"sets matrix A 2x4 and sets matrix B 4x4");
+
         }
         else if ((firstPickerRow == 8) && (row  == 0)) {
             self.matrixB1.hidden = NO;
@@ -2154,6 +2248,8 @@
             self.result15.hidden = YES;
             self.result6.hidden = YES;
             
+            NSLog(@"sets matrix A 3x1 and sets matrix B 1x1");
+
         }
         else if ((firstPickerRow == 8) && (row  == 1)) {
             self.matrixB1.hidden = NO;
@@ -2206,6 +2302,9 @@
             self.result14.hidden = YES;
             self.result15.hidden = YES;
             self.result16.hidden = YES;
+            
+            NSLog(@"sets matrix A 3x1 and sets matrix B 1x2");
+
         }
         else if ((firstPickerRow == 8) && (row  == 2)) {
             self.matrixB1.hidden = NO;
@@ -2258,6 +2357,9 @@
             self.result14.hidden = YES;
             self.result15.hidden = YES;
             self.result16.hidden = YES;
+            
+            NSLog(@"sets matrix A 3x1 and sets matrix B 1x3");
+
         }
         else if ((firstPickerRow == 8) && (row  == 3)) {
             self.matrixB1.hidden = NO;
@@ -2310,6 +2412,9 @@
             self.result14.hidden = YES;
             self.result15.hidden = YES;
             self.result16.hidden = YES;
+            
+            NSLog(@"sets matrix A 3x1 and sets matrix B 1x4");
+
         }
         else if ((firstPickerRow == 9) && (row  == 0)) {
             self.matrixB1.hidden = NO;
@@ -2362,6 +2467,9 @@
             self.result14.hidden = YES;
             self.result15.hidden = YES;
             self.result16.hidden = YES;
+            
+            NSLog(@"sets matrix A 3x2 and sets matrix B 2x1");
+
         }
         else if ((firstPickerRow == 9) && (row  == 1)) {
             self.matrixB1.hidden = NO;
@@ -2414,6 +2522,9 @@
             self.result14.hidden = YES;
             self.result15.hidden = YES;
             self.result16.hidden = YES;
+            
+            NSLog(@"sets matrix A 3x2 and sets matrix B 2x2");
+
         }
         else if ((firstPickerRow == 9) && (row  == 2)) {
             self.matrixB1.hidden = NO;
@@ -2466,6 +2577,9 @@
             self.result14.hidden = YES;
             self.result15.hidden = YES;
             self.result16.hidden = YES;
+            
+            NSLog(@"sets matrix A 3x2 and sets matrix B 2x3");
+
         }
         else if ((firstPickerRow == 9) && (row  == 3)) {
             self.matrixB1.hidden = NO;
@@ -2518,6 +2632,9 @@
             self.result14.hidden = YES;
             self.result15.hidden = YES;
             self.result16.hidden = YES;
+            
+            NSLog(@"sets matrix A 3x2 and sets matrix B 2x4");
+
         }
         else if ((firstPickerRow == 10) && (row  == 0)) {
             self.matrixB1.hidden = NO;
@@ -2570,6 +2687,9 @@
             self.result14.hidden = YES;
             self.result15.hidden = YES;
             self.result16.hidden = YES;
+            
+            NSLog(@"sets matrix A 3x3 and sets matrix B 3x1");
+
         }
         else if ((firstPickerRow == 10) && (row  == 1)) {
             self.matrixB1.hidden = NO;
@@ -2622,6 +2742,9 @@
             self.result14.hidden = YES;
             self.result15.hidden = YES;
             self.result16.hidden = YES;
+            
+            NSLog(@"sets matrix A 3x3 and sets matrix B 3x2");
+
         }
         else if ((firstPickerRow == 10) && (row  == 2)) {
             self.matrixB1.hidden = NO;
@@ -2674,6 +2797,9 @@
             self.result14.hidden = YES;
             self.result15.hidden = YES;
             self.result16.hidden = YES;
+            
+            NSLog(@"sets matrix A 3x3 and sets matrix B 3x3");
+
         }
         else if ((firstPickerRow == 10) && (row  == 3)) {
             self.matrixB1.hidden = NO;
@@ -2726,6 +2852,9 @@
             self.result14.hidden = YES;
             self.result15.hidden = YES;
             self.result16.hidden = YES;
+            
+            NSLog(@"sets matrix A 3x3 and sets matrix B 3x4");
+
         }
         else if ((firstPickerRow == 11) && (row  == 0)) {
             self.matrixB1.hidden = NO;
@@ -2778,6 +2907,8 @@
             self.result14.hidden = YES;
             self.result15.hidden = YES;
             self.result16.hidden = YES;
+            NSLog(@"sets matrix A 3x4 and sets matrix B 4x1");
+
         }
         else if ((firstPickerRow == 11) && (row  == 1)) {
             self.matrixB1.hidden = NO;
@@ -2830,6 +2961,9 @@
             self.result14.hidden = YES;
             self.result15.hidden = YES;
             self.result16.hidden = YES;
+            
+            NSLog(@"sets matrix A 3x4 and sets matrix B 4x2");
+
         }
         else if ((firstPickerRow == 11) && (row  == 2)) {
             self.matrixB1.hidden = NO;
@@ -2882,6 +3016,9 @@
             self.result14.hidden = YES;
             self.result15.hidden = YES;
             self.result16.hidden = YES;
+            
+            NSLog(@"sets matrix A 3x4 and sets matrix B 4x3");
+
         }
         else if ((firstPickerRow == 11) && (row  == 3)) {
             self.matrixB1.hidden = NO;
@@ -2934,6 +3071,9 @@
             self.result14.hidden = YES;
             self.result15.hidden = YES;
             self.result16.hidden = YES;
+            
+            NSLog(@"sets matrix A 3x4 and sets matrix B 4x4");
+
         }
         else if ((firstPickerRow == 12) && (row  == 0)) {
             self.matrixB1.hidden = NO;
@@ -2987,6 +3127,8 @@
             self.result15.hidden = YES;
             self.result6.hidden = YES;
             
+            NSLog(@"sets matrix A 4x1 and sets matrix B 1x1");
+
         }
         else if ((firstPickerRow == 12) && (row  == 1)) {
             self.matrixB1.hidden = NO;
@@ -3039,6 +3181,9 @@
             self.result14.hidden = NO;
             self.result15.hidden = YES;
             self.result16.hidden = YES;
+            
+            NSLog(@"sets matrix A 4x1 and sets matrix B 1x2");
+
         }
         else if ((firstPickerRow == 12) && (row  == 2)) {
             self.matrixB1.hidden = NO;
@@ -3091,6 +3236,9 @@
             self.result14.hidden = NO;
             self.result15.hidden = NO;
             self.result16.hidden = YES;
+            
+            NSLog(@"sets matrix A 4x1 and sets matrix B 1x3");
+
         }
         else if ((firstPickerRow == 12) && (row  == 3)) {
             self.matrixB1.hidden = NO;
@@ -3143,6 +3291,9 @@
             self.result14.hidden = NO;
             self.result15.hidden = NO;
             self.result16.hidden = NO;
+            
+            NSLog(@"sets matrix A 4x1 and sets matrix B 1x4");
+
         }
         else if ((firstPickerRow == 13) && (row  == 0)) {
             self.matrixB1.hidden = NO;
@@ -3195,6 +3346,9 @@
             self.result14.hidden = YES;
             self.result15.hidden = YES;
             self.result16.hidden = YES;
+            
+            NSLog(@"sets matrix A 4x2 and sets matrix B 2x1");
+
         }
         else if ((firstPickerRow == 13) && (row  == 1)) {
             self.matrixB1.hidden = NO;
@@ -3247,6 +3401,9 @@
             self.result14.hidden = NO;
             self.result15.hidden = YES;
             self.result16.hidden = YES;
+            
+            NSLog(@"sets matrix A 4x2 and sets matrix B 2x2");
+
         }
         else if ((firstPickerRow == 13) && (row  == 2)) {
             self.matrixB1.hidden = NO;
@@ -3299,6 +3456,9 @@
             self.result14.hidden = NO;
             self.result15.hidden = NO;
             self.result16.hidden = YES;
+            
+            NSLog(@"sets matrix A 4x2 and sets matrix B 2x3");
+
         }
         else if ((firstPickerRow == 13) && (row  == 3)) {
             self.matrixB1.hidden = NO;
@@ -3351,6 +3511,9 @@
             self.result14.hidden = NO;
             self.result15.hidden = NO;
             self.result16.hidden = NO;
+            
+            NSLog(@"sets matrix A 4x2 and sets matrix B 2x4");
+
         }
         else if ((firstPickerRow == 14) && (row  == 0)) {
             self.matrixB1.hidden = NO;
@@ -3403,6 +3566,9 @@
             self.result14.hidden = YES;
             self.result15.hidden = YES;
             self.result16.hidden = YES;
+            
+            NSLog(@"sets matrix A 4x3 and sets matrix B 3x1");
+
         }
         else if ((firstPickerRow == 14) && (row  == 1)) {
             self.matrixB1.hidden = NO;
@@ -3455,6 +3621,9 @@
             self.result14.hidden = NO;
             self.result15.hidden = YES;
             self.result16.hidden = YES;
+            
+            NSLog(@"sets matrix A 4x3 and sets matrix B 3x2");
+
         }
         else if ((firstPickerRow == 14) && (row  == 2)) {
             self.matrixB1.hidden = NO;
@@ -3507,6 +3676,9 @@
             self.result14.hidden = NO;
             self.result15.hidden = NO;
             self.result16.hidden = YES;
+            
+            NSLog(@"sets matrix A 4x3 and sets matrix B 3x3");
+
         }
         else if ((firstPickerRow == 14) && (row  == 3)) {
             self.matrixB1.hidden = NO;
@@ -3559,6 +3731,9 @@
             self.result14.hidden = NO;
             self.result15.hidden = NO;
             self.result16.hidden = NO;
+            
+            NSLog(@"sets matrix A 4x3 and sets matrix B 3x4");
+
         }
         else if ((firstPickerRow == 15) && (row  == 0)) {
             self.matrixB1.hidden = NO;
@@ -3611,6 +3786,9 @@
             self.result14.hidden = YES;
             self.result15.hidden = YES;
             self.result16.hidden = YES;
+            
+            NSLog(@"sets matrix A 4x4 and sets matrix B 4x1");
+
         }
         else if ((firstPickerRow == 15) && (row  == 1)) {
             self.matrixB1.hidden = NO;
@@ -3663,6 +3841,9 @@
             self.result14.hidden = NO;
             self.result15.hidden = YES;
             self.result16.hidden = YES;
+            
+            NSLog(@"sets matrix A 4x4 and sets matrix B 4x2");
+
         }
         else if ((firstPickerRow == 15) && (row  == 2)) {
             self.matrixB1.hidden = NO;
@@ -3715,6 +3896,9 @@
             self.result14.hidden = NO;
             self.result15.hidden = NO;
             self.result16.hidden = YES;
+            
+            NSLog(@"sets matrix A 4x4 and sets matrix B 4x3");
+
         }
         else if ((firstPickerRow == 15) && (row  == 3)) {
             self.matrixB1.hidden = NO;
@@ -3767,6 +3951,9 @@
             self.result14.hidden = NO;
             self.result15.hidden = NO;
             self.result16.hidden = NO;
+            
+            NSLog(@"sets matrix A 4x4 and sets matrix B 4x4");
+
         }
     }
 }
@@ -3825,7 +4012,7 @@
     int resultP = [_matrixA13.text intValue] * [_matrixB4.text intValue] + [_matrixA14.text intValue] * [_matrixB8.text intValue] + [_matrixA15.text intValue] * [_matrixB12.text intValue] + [_matrixA16.text intValue] * [_matrixB16.text intValue];
     _result16.text = [NSString stringWithFormat:@"%d", resultP];
     
-    
+    NSLog(@"Multiply Button Pressed, results displayed");
     
 }
 @end

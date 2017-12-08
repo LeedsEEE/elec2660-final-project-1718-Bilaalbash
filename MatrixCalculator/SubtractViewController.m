@@ -213,6 +213,8 @@
             self.result15.hidden = YES;
             self.result16.hidden = YES;
             
+            NSLog(@"sets matrix 1x1");
+
         }
         else if (row == 1) {
             self.matrixA1.hidden = NO;
@@ -265,6 +267,9 @@
             self.result14.hidden = YES;
             self.result15.hidden = YES;
             self.result16.hidden = YES;
+            
+            NSLog(@"sets matrix 1x2");
+
         }
         else if (row == 2) {
             self.matrixA1.hidden = NO;
@@ -318,6 +323,8 @@
             self.result15.hidden = YES;
             self.result16.hidden = YES;
             
+            NSLog(@"sets matrix 1x3");
+
         }
         else if (row == 3) {
             self.matrixA1.hidden = NO;
@@ -371,6 +378,8 @@
             self.result15.hidden = YES;
             self.result16.hidden = YES;
             
+            NSLog(@"sets matrix 1x4");
+
         }
         else if (row == 4) {
             self.matrixA1.hidden = NO;
@@ -423,6 +432,9 @@
             self.result14.hidden = YES;
             self.result15.hidden = YES;
             self.result16.hidden = YES;
+            
+            NSLog(@"sets matrix 2x1");
+
         }
         else if (row == 5) {
             self.matrixA1.hidden = NO;
@@ -476,6 +488,8 @@
             self.result15.hidden = YES;
             self.result16.hidden = YES;
             
+            NSLog(@"sets matrix 2x2");
+
         }
         else if (row == 6) {
             self.matrixA1.hidden = NO;
@@ -529,6 +543,8 @@
             self.result15.hidden = YES;
             self.result16.hidden = YES;
             
+            NSLog(@"sets matrix 2x3");
+
         }
         else if (row == 7) {
             self.matrixA1.hidden = NO;
@@ -581,6 +597,9 @@
             self.result14.hidden = YES;
             self.result15.hidden = YES;
             self.result16.hidden = YES;
+            
+            NSLog(@"sets matrix 2x4");
+
         }
         else if (row == 8) {
             self.matrixA1.hidden = NO;
@@ -634,6 +653,8 @@
             self.result15.hidden = YES;
             self.result16.hidden = YES;
             
+            NSLog(@"sets matrix 3x1");
+
         }
         else if (row == 9) {
             self.matrixA1.hidden = NO;
@@ -687,6 +708,8 @@
             self.result15.hidden = YES;
             self.result16.hidden = YES;
             
+            NSLog(@"sets matrix 3x2");
+
         }
         else if (row == 10) {
             self.matrixA1.hidden = NO;
@@ -740,6 +763,8 @@
             self.result15.hidden = YES;
             self.result16.hidden = YES;
             
+            NSLog(@"sets matrix 3x3");
+
         }
         else if (row == 11) {
             self.matrixA1.hidden = NO;
@@ -793,6 +818,8 @@
             self.result15.hidden = YES;
             self.result16.hidden = YES;
             
+            NSLog(@"sets matrix 3x4");
+
         }
         else if (row == 12) {
             self.matrixA1.hidden = NO;
@@ -846,6 +873,8 @@
             self.result15.hidden = YES;
             self.result16.hidden = YES;
             
+            NSLog(@"sets matrix 4x1");
+
         }
         else if (row == 13) {
             self.matrixA1.hidden = NO;
@@ -898,6 +927,8 @@
             self.result14.hidden = NO;
             self.result15.hidden = YES;
             self.result16.hidden = YES;
+          
+            NSLog(@"sets matrix 4x2");
             
         }
         else if (row == 14) {
@@ -952,6 +983,8 @@
             self.result15.hidden = NO;
             self.result16.hidden = YES;
             
+            NSLog(@"sets matrix 4x3");
+
         }
         else if (row == 15) {
             self.matrixA1.hidden = NO;
@@ -1004,6 +1037,8 @@
             self.result14.hidden = NO;
             self.result15.hidden = NO;
             self.result16.hidden = NO;
+            
+            NSLog(@"sets matrix 4x4");
             
         }
     }
@@ -1070,5 +1105,8 @@
     
     int resultP = [_matrixA16.text intValue] - [_matrixB16.text intValue];
     _result16.text = [NSString stringWithFormat:@"%d", resultP];
+    
+    NSLog(@"Subtract Button Pressed, results displayed");
+
 }
 @end
