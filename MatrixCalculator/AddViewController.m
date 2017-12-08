@@ -8,6 +8,13 @@
 
 #import "AddViewController.h"
 
+// References
+// Icons for the tabbed view were found from https://icons8.com
+// Badge Icon was adapted from http://www.iconarchive.com/tag/calculator
+// Used to hide keyboard https://www.youtube.com/watch?v=RNG9Sbc7qvI
+// How to add the textfield was found by using https://stackoverflow.com/questions/10094063/addition-of-two-numbers-using-textfield
+// Changing the keboard to a key pad: https://stackoverflow.com/questions/22348395/text-field-keyboard-set-to-number-pad-but-regular-keyboard-is-displaying-on-sele
+
 @interface AddViewController () <UITextFieldDelegate>
 {
     NSArray *matrixSize;
@@ -15,6 +22,10 @@
 @end
 
 @implementation AddViewController
+
+- (IBAction)backgroundTapped:(id)sender {
+    [self.view endEditing:YES];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -69,8 +80,8 @@ matrixSize = @[@"1x1",@"1x2",@"1x3",@"1x4",@"2x1",@"2x2",@"2x3",@"2x4",@"3x1",@"
     
 #pragma mark - Making Keyboard a Numberpad
 
-    //_matrixA1.keyboardType = UIKeyboardTypeNumberPad;
-    //_matrixA2.keyboardType = UIKeyboardTypeNumberPad;
+    _matrixA1.keyboardType = UIKeyboardTypeNumberPad;
+    _matrixA2.keyboardType = UIKeyboardTypeNumberPad;
     _matrixA3.keyboardType = UIKeyboardTypeNumberPad;
     _matrixA4.keyboardType = UIKeyboardTypeNumberPad;
     _matrixA5.keyboardType = UIKeyboardTypeNumberPad;
@@ -1079,6 +1090,7 @@ matrixSize = @[@"1x1",@"1x2",@"1x3",@"1x4",@"2x1",@"2x2",@"2x3",@"2x4",@"3x1",@"
     
     int resultP = [_matrixA16.text intValue] + [_matrixB16.text intValue];
     _result16.text = [NSString stringWithFormat:@"%d", resultP];
+    
 }
 #pragma mark - Text Field Delegate Methods
 

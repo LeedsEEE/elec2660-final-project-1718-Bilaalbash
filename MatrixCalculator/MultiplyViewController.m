@@ -8,6 +8,13 @@
 
 #import "MultiplyViewController.h"
 
+// References
+// Icons for the tabbed view were found from https://icons8.com
+// Badge Icon was adapted from http://www.iconarchive.com/tag/calculator
+// Used to hide keyboard https://www.youtube.com/watch?v=RNG9Sbc7qvI
+// How to add the textfield was found by using https://stackoverflow.com/questions/10094063/addition-of-two-numbers-using-textfield
+// Changing the keboard to a key pad: https://stackoverflow.com/questions/22348395/text-field-keyboard-set-to-number-pad-but-regular-keyboard-is-displaying-on-sele
+
 @interface MultiplyViewController () <UITextFieldDelegate>
 {
     NSArray *matrixSize;
@@ -21,6 +28,11 @@
 @end
 
 @implementation MultiplyViewController
+
+- (IBAction)backgroundTapped:(id)sender {
+    [self.view endEditing:YES];
+}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
