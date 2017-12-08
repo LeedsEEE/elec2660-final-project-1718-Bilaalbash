@@ -80,7 +80,7 @@ matrixSize = @[@"1x1",@"1x2",@"1x3",@"1x4",@"2x1",@"2x2",@"2x3",@"2x4",@"3x1",@"
     
 #pragma mark - Making Keyboard a Numberpad
 
-    _matrixA1.keyboardType = UIKeyboardTypeNumberPad;
+    _matrixA1.keyboardType = UIKeyboardTypeNumberPad; // Changing keyboard to a keypad.
     _matrixA2.keyboardType = UIKeyboardTypeNumberPad;
     _matrixA3.keyboardType = UIKeyboardTypeNumberPad;
     _matrixA4.keyboardType = UIKeyboardTypeNumberPad;
@@ -185,7 +185,7 @@ matrixSize = @[@"1x1",@"1x2",@"1x3",@"1x4",@"2x1",@"2x2",@"2x3",@"2x4",@"3x1",@"
     
     if (pickerView == self.firstPickerAdd) {
         NSInteger row = [self.firstPickerAdd selectedRowInComponent:0];
-        if (row  == 0) {
+        if (row  == 0) { // Hiding the textfields depending on what row the picker is on.
             self.matrixA1.hidden = NO;
             self.matrixA2.hidden = YES;
             self.matrixA3.hidden = YES;
@@ -1084,6 +1084,8 @@ matrixSize = @[@"1x1",@"1x2",@"1x3",@"1x4",@"2x1",@"2x2",@"2x3",@"2x4",@"3x1",@"
     self.secondPickerAdd.hidden = NO;
     [self.secondPickerAdd reloadAllComponents];
 }
+
+#pragma mark - Calculating the results
 
 - (IBAction)addButton:(id)sender {
     int resultA = [_matrixA1.text intValue] + [_matrixB1.text intValue];

@@ -39,7 +39,7 @@
     self.secondPickerSubtract.hidden = YES;
     self.myButton.hidden = YES;
 
-    self.result1.hidden = YES;
+    self.result1.hidden = YES; // Hides all of the results.
     self.result2.hidden = YES;
     self.result3.hidden = YES;
     self.result4.hidden = YES;
@@ -60,7 +60,7 @@
     
 #pragma mark - Making Keyboard a Numberpad
 
-    _matrixA1.keyboardType = UIKeyboardTypeNumberPad;
+    _matrixA1.keyboardType = UIKeyboardTypeNumberPad; // Changed keyboard to a keypad.
     _matrixA2.keyboardType = UIKeyboardTypeNumberPad;
     _matrixA3.keyboardType = UIKeyboardTypeNumberPad;
     _matrixA4.keyboardType = UIKeyboardTypeNumberPad;
@@ -159,9 +159,11 @@
     
     //hide textfields using picker
     
+#pragma mark - Hiding textfields
+    
     if (pickerView == self.firstPickerSubtract) {
         NSInteger row = [self.firstPickerSubtract selectedRowInComponent:0];
-        if (row  == 0) {
+        if (row  == 0) { // This hides the textfields depending on which row the picker is on.
             self.matrixA1.hidden = NO;
             self.matrixA2.hidden = YES;
             self.matrixA3.hidden = YES;
@@ -1056,7 +1058,7 @@
     [self.secondPickerSubtract reloadAllComponents];
 }
 
-
+#pragma mark - Calculating the results.
 - (IBAction)subtractButton:(id)sender {
     int resultA = [_matrixA1.text intValue] - [_matrixB1.text intValue];
     _result1.text = [NSString stringWithFormat:@"%d", resultA];

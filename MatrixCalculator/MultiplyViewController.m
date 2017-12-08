@@ -18,10 +18,6 @@
 @interface MultiplyViewController () <UITextFieldDelegate>
 {
     NSArray *matrixSize;
-    NSArray *row1;
-    NSArray *row2;
-    NSArray *row3;
-    NSArray *row4;
 
 }
 
@@ -95,16 +91,12 @@
     self.result14.hidden = YES;
     self.result15.hidden = YES;
     self.result16.hidden = YES;
-    
-    row1 = @[@"1x1", @"1x2", @"1x3", @"1x4"];
-    row2 = @[@"2x1", @"2x2", @"2x3", @"2x4"];
-    row3 = @[@"3x1", @"3x2", @"3x3", @"3x4"];
-    row4 = @[@"4x1", @"4x2", @"4x3", @"4x4"];
+
 
     matrixSize = @[@"1x1",@"1x2",@"1x3",@"1x4",@"2x1",@"2x2",@"2x3",@"2x4",@"3x1",@"3x2",@"3x3",@"3x4",@"4x1",@"4x2",@"4x3",@"4x4"];
     
 #pragma mark - Making Keyboard a Numberpad
-    _matrixA1.keyboardType = UIKeyboardTypeNumberPad;
+    _matrixA1.keyboardType = UIKeyboardTypeNumberPad; //Changing keyboard so that it shows a keypad.
     _matrixA2.keyboardType = UIKeyboardTypeNumberPad;
     _matrixA3.keyboardType = UIKeyboardTypeNumberPad;
     _matrixA4.keyboardType = UIKeyboardTypeNumberPad;
@@ -191,7 +183,7 @@
         
         title = [matrixSize objectAtIndex:[self.firstPickerMultiply selectedRowInComponent:0]];
         
-        
+#pragma mark - setting the second picker.
         //If statements setting the secondPicker to 4 rows depending on what row firstPicker is on.
         NSInteger firstPickerRow = [self.firstPickerMultiply selectedRowInComponent:0];
         if (firstPickerRow == 0) {
@@ -436,7 +428,7 @@
     if (pickerView == self.secondPickerMultiply) {
         NSInteger row = [self.secondPickerMultiply selectedRowInComponent:0];
 
-        if ((firstPickerRow == 0) && (row  == 0)) {
+        if ((firstPickerRow == 0) && (row  == 0)) { //if statements hiding the textfields depending on what row is chosen.
             self.matrixB1.hidden = NO;
             self.matrixB2.hidden = YES;
             self.matrixB3.hidden = YES;
@@ -3963,6 +3955,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - Calculating the results
 - (IBAction)multiplyButton:(id)sender {
     int resultA = [_matrixA1.text intValue] * [_matrixB1.text intValue] + [_matrixA2.text intValue] * [_matrixB5.text intValue] + [_matrixA3.text intValue] * [_matrixB9.text intValue] + [_matrixA4.text intValue] * [_matrixB13.text intValue];
     _result1.text = [NSString stringWithFormat:@"%d", resultA];
